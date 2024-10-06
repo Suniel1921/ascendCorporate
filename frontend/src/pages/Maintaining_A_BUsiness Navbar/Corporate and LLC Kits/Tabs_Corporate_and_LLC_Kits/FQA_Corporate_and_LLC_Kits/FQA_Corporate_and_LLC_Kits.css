@@ -1,0 +1,33 @@
+.fwa-corporate-and-llc-kits-container {
+    padding: 20px;
+}
+
+.fwa-corporate-and-llc-kits-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-corporate-and-llc-kits-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-corporate-and-llc-kits-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-corporate-and-llc-kits-section {
+    margin-top: 40px;
+}
+
+.fwa-corporate-and-llc-kits-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-corporate-and-llc-kits-back-to-top:hover {
+    text-decoration: underline;
+}

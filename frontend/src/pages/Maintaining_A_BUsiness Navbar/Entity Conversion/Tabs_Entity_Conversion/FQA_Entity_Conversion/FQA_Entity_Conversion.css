@@ -1,0 +1,33 @@
+.fwa-Entity_Conversion-container {
+    padding: 20px;
+}
+
+.fwa-Entity_Conversion-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-Entity_Conversion-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-Entity_Conversion-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-Entity_Conversion-section {
+    margin-top: 40px;
+}
+
+.fwa-Entity_Conversion-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-Entity_Conversion-back-to-top:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,293 @@
+/* .priceBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEF2F2;
+  padding: 5px 15px;
+  border-radius: 25px; 
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.price_redDot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%; 
+  margin-right: 8px; 
+}
+
+.price {
+  font-size: 13px;
+  color: #2a2a2a; 
+  margin: 0;
+}
+
+
+
+
+
+.pricing-section {
+  color: #4a5568;
+  overflow: hidden;
+  padding: 96px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top_pricing_container {
+  text-align: center;
+}
+
+.Pricing_main_box {
+  font-size: 12px;
+  background-color: #f5f5f7;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.title_pricing {
+  font-size: 40px;
+  font-weight: 700;
+  color: #14133B;
+  margin: auto auto 16px auto;
+  margin-top: 18px;
+}
+
+.description_pricing {
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #718096;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.card, .cardpopular {
+  padding: 24px;
+  text-align: center;
+  border-radius: 8px;
+  color: #6A7c92;
+  background-color: #F5F7F8;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardpopular {
+  border-color: #5a67d8;
+}
+
+.card:hover, .cardpopular:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+.card:hover .icon_top, .cardpopular:hover .icon_top {
+  background-color: #6A7c92;
+}
+
+.card:hover .Icon_top_icon, .cardpopular:hover .Icon_top_icon {
+  color: white;
+}
+
+.popular_content {
+  padding: 0 20px;
+}
+
+.plan-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.plan-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #edf2f7;
+  position: absolute;
+  left: 0;
+  margin-bottom: 16px;
+}
+
+.plan-price {
+  font-size: 3rem;
+  color: #1a202c;
+}
+
+.billing-cycle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #718096;
+  margin-left: 4px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  color: #718096;
+  margin-bottom: 1px;
+  font-size: 1rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e60000;
+  border-radius: 50%;
+}
+
+.badge {
+  background-color: #e60000;
+  color: white;
+  padding: 8px;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.icon_pricing {
+  width: 40px;
+  height: 40px;
+  background-color: #2d3748;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.icon_pricing svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.Icon_top_icon {
+  font-size: 3rem;
+}
+
+.icon_top {
+  text-align: center;
+  display: inline-block;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+  .title_pricing {
+    font-size: 30px;
+    font-weight: 700;
+    color: #14133B;
+  }
+  .description_pricing {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #718096;
+  }
+  .top_pricing_container {
+    text-align: left;
+  }
+  .title_pricing {
+    font-size: 30px;
+    width:80%;
+    font-weight: 700;
+    color: #1a202c;
+  }
+  .Pricing_main_box {
+    margin-left: 10%;
+  }
+  .plan-title {
+    margin-bottom: 5px;
+  }
+  .plan-price {
+    font-size: 2rem;
+    margin:5px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .description_pricing {
+    max-width: 80%;
+    font-size: 16px;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .pricing-section {
+    color: #4a5568;
+    padding: 96px 0;
+  }
+  .top_pricing_container {
+    text-align: left;
+}
+.title_pricing {
+  font-size: 30px;
+  width:80%;
+  font-weight: 700;
+  color: #1a202c;
+}
+.Pricing_main_box {
+  margin-left: 10%;
+}
+.plan-title {
+  margin-bottom: 5px;
+}
+.plan-price {
+  font-size: 2rem;
+  margin:5px;
+}
+} */
+
+
+
+
+
+
+/* ---------------package showing dynamically (style is applying form package.css) ---------------- */
+.pricing_main{
+  margin-bottom: 143px;
+}
+
+

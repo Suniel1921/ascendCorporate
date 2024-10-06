@@ -1,0 +1,125 @@
+/* Main container for package selection */
+.packageSelectionContainer {
+    margin-top: 30px;
+  }
+  
+  /* Styling for package cards */
+  .packageCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Individual package card styles */
+  .packageChildCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading area within each package card */
+  .packageHeadingData {
+    background-color: #b3e5fc;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .packageHeadingData h3 {
+    margin: 0;
+    color: #007bb5;
+    font-size: 1.5rem;
+  }
+  
+  /* Price display styles */
+  .packagecartPrice {
+    margin: 0.5rem 0;
+    color: var(--blackColor);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  /* Button styles */
+  .packageHeadingData button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Button hover effect */
+  .packageHeadingData button:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* List styles within each package card */
+  .packageListContent {
+    background-color: #ffffff;
+    padding: 1rem;
+  }
+  
+  .packageListContent li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+    color: #333;
+    padding: 9px;
+  }
+  
+  /* Package heading styles */
+  .packageHeading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .packageHeading h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .packageHeading p {
+    color: #666;
+  }
+  
+
+  /* Styles for the loading spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+
+
+
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .packageCard {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .packageCard {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  
+    .packagecartPrice {
+      font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+  
+    .packageHeadingData button {
+      padding: 0.5rem 1rem; /* Adjust button size */
+    }
+  }
+  
+
+
+
+
+

@@ -1,0 +1,68 @@
+/* QualificationsForm Styles */
+.qualifications-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qualifications-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .qualifications-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .qualifications-form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .qualifications-form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .qualifications-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .qualifications-checkbox-item {
+    width: 48%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .qualifications-checkbox-item input {
+    margin-right: 10px;
+  }
+  
+  .qualifications-continue-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e62e2d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .qualifications-continue-button:hover {
+    background-color: #d42a2a;
+  }
+  

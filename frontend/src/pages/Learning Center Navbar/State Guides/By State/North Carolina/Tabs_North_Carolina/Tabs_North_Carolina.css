@@ -1,0 +1,57 @@
+.tabs-North_Carolina-container {
+    width: 100%;
+}
+
+.tabs-North_Carolina-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Adjust for many tabs */
+}
+
+.tabs-North_Carolina-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-North_Carolina-tab.tabs-North_Carolina-active {
+    color: #d8345f;
+}
+
+.tabs-North_Carolina-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-North_Carolina-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-North_Carolina-indicator.tabs-North_Carolina-corporation { left: 0; width: 60px; }
+.tabs-North_Carolina-indicator.tabs-North_Carolina-llc { left: 105px; width: 60px; }
+.tabs-North_Carolina-indicator.tabs-North_Carolina-business-licenses { left: 225px; width: 60px; }
+
+.tabs-North_Carolina-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.tabs-North_Carolina-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,43 @@
+.delware-sidebar {
+  width: 70%;
+  padding: 20px 0 20px;
+}
+
+.delware-accordion-item {
+  margin-bottom: 10px;
+}
+
+.delware-accordion-title {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.delware-accordion-title:hover{
+  color:#D1344f;
+  text-decoration:underline;
+}
+.delware-sidebar h3{
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  color:#D1344f;
+}
+.delware-accordion-content {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.sidebarleft_ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 5px;
+  text-align: left;
+  color:#D1344f !important;
+  border-bottom: 1px solid #ddd;
+  margin:10px 0;
+}
+
+.delware-accordion-content ul li:hover{
+  color:#D1344f !important;
+  text-decoration:underline;
+}

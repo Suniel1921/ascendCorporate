@@ -1,0 +1,57 @@
+.tabs-Georgia-container {
+    width: 100%;
+}
+
+.tabs-Georgia-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Adjust for many tabs */
+}
+
+.tabs-Georgia-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-Georgia-tab.tabs-Georgia-active {
+    color: #d8345f;
+}
+
+.tabs-Georgia-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-Georgia-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-Georgia-indicator.tabs-Georgia-corporation { left: 0; width: 60px; }
+.tabs-Georgia-indicator.tabs-Georgia-llc { left: 105px; width: 60px; }
+.tabs-Georgia-indicator.tabs-Georgia-business-licenses { left: 225px; width: 60px; }
+
+.tabs-Georgia-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.tabs-Georgia-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

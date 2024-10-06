@@ -1,0 +1,72 @@
+.error {
+  color: red; /* Color for error messages */
+  font-size: 15px; /* Font size for error messages */
+  margin-top: 5px; /* Space above error messages */
+}
+
+.flexContainer {
+  display: flex; /* Using flexbox for layout */
+  /* justify-content: space-around; */
+
+  gap: 2rem; /* Gap between flex items */
+  margin-top: 34px;
+}
+
+.userContactInfoContainer{
+  width: 60%;
+}
+
+.cartContainer{
+  width: 40%;
+}
+
+
+/* */
+
+.contactForm {
+  display: grid; /* Grid layout for form fields */
+  grid-template-columns: repeat(3, 1fr); /* Three columns for form fields */
+  gap: 2rem; /* Space between grid items */
+}
+
+.contactForm div {
+  margin-bottom: 15px; /* Margin below each field */
+}
+
+.contactForm label {
+  margin-bottom: 5px; /* Margin below labels */
+  font-weight: bold; /* Bold labels */
+  font-size: 15px;
+}
+
+.contactForm input {
+  padding: 8px; /* Padding for input fields */
+  border: 1px solid #ccc; /* Light border around input fields */
+  border-radius: 4px; /* Rounded corners for input fields */
+  width: 100%; /* Full width for input fields */
+}
+
+.contactForm button {
+  padding: 10px; /* Padding for button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  height: 44px; /* Fixed height for button */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .flexContainer {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .contactForm {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .cartContainer {
+    margin-top: 20px; /* Space between form and cart */
+  }
+}

@@ -1,0 +1,33 @@
+.fwa-Mail_Forwarding_Service-container {
+    padding: 20px;
+}
+
+.fwa-Mail_Forwarding_Service-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-Mail_Forwarding_Service-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-Mail_Forwarding_Service-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-Mail_Forwarding_Service-section {
+    margin-top: 40px;
+}
+
+.fwa-Mail_Forwarding_Service-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-Mail_Forwarding_Service-back-to-top:hover {
+    text-decoration: underline;
+}

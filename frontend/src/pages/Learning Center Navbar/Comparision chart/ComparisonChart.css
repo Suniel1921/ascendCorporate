@@ -1,0 +1,104 @@
+.comparision-chartcontainer {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comparision-chartheading {
+    text-align: center;
+    margin: 40px 0 50px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.comparision-chartmain {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.comparision-chartleft {
+    width: 75%;
+}
+
+.comparision-chartright {
+    width: 25%;
+    padding: 10px 20px 30px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 300px;
+    border: 4px solid #003B5C;
+    text-align: center;
+}
+
+.comparision-chartparagraph {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 2px solid #ddd;
+    padding: 8px 5px;
+    text-align: left;
+    font-size:14px;
+    vertical-align: top;
+}
+
+.comparison-table th {
+    background-color: #fff;
+    font-size: 1.1em;
+    color: #d32f2f;
+}
+
+.comparision-chartright h3 {
+    font-size: 32px;
+    color: #d1344F;
+    margin: 20px auto 10px auto;
+    width: 80%;
+    line-height: 40px;
+}
+
+.comparision-chartright p {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+
+.comparision-chartbutton_full {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #DA5E73;
+    border-radius: 5px;
+}
+
+.comparision-chartbutton {
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: #DA5E73;
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+    .comparision-chartcontainer {
+        width: 90%;
+    }
+    .comparision-chartmain {
+        display: block;
+    }
+    .comparision-chartleft {
+        width: 100%;
+    }
+    .comparision-chartright {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .comparision-chartcontainer {
+        width: 90%;
+    }
+}

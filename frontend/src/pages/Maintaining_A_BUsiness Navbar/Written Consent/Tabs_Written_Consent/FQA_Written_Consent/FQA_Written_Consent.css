@@ -1,0 +1,33 @@
+.fwa-written-consent-container {
+    padding: 20px;
+}
+
+.fwa-written-consent-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-written-consent-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-written-consent-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-written-consent-section {
+    margin-top: 40px;
+}
+
+.fwa-written-consent-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-written-consent-back-to-top:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+.FQA_Scorp_Election_heading {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 70px;
+    width: 60%;
+    margin: 70px auto;
+}
+
+.FQA_Scorp_Election_container {
+    padding: 20px;
+}
+
+.FQA_Scorp_Election_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.FQA_Scorp_Election_list_item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.FQA_Scorp_Election_question:hover {
+    text-decoration: underline;
+}
+
+.FQA_Scorp_Election_section {
+    margin-top: 40px;
+}
+
+.FQA_Scorp_Election_back_to_top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.FQA_Scorp_Election_back_to_top:hover {
+    text-decoration: underline;
+}

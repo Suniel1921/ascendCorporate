@@ -1,0 +1,78 @@
+/* Order progress container styles */
+.order-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d9534f;
+  padding: 10px 0;
+  margin: 0 20px;
+  margin-top: 73px;
+}
+
+/* Individual step styles */
+.step {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #999;
+}
+
+/* Current step styles */
+.step.current {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+/* Completed step styles */
+.step.completed {
+  color: green;
+}
+
+/* Icon color for completed steps */
+.step.completed .icon {
+  color: green;
+}
+
+/* Icon color for current steps */
+.step.current .icon {
+  color: #337ab7;
+}
+
+/* Default icon styles */
+.icon {
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .order-progress {
+    /* flex-direction: column; 
+    align-items: flex-start;  */
+    display: none;
+  }
+
+  .step {
+    font-size: 14px; /* Reduce font size on smaller screens */
+    padding: 5px 0; /* Adjust padding for smaller screens */
+  }
+
+  .icon {
+    font-size: 18px; /* Adjust icon size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    font-size: 12px; /* Further reduce font size for very small screens */
+  }
+
+  .icon {
+    font-size: 16px; /* Adjust icon size for very small screens */
+  }
+}

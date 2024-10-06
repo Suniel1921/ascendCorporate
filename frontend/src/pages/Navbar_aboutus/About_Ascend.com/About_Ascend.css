@@ -1,0 +1,25 @@
+.top_about_ascend {
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.top_ascend_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.image_over_paragraph {
+    position: absolute; /* Positioning the text absolutely within the container */
+    color: #003B5C;
+    top: 6vh;
+    width:40%;
+    text-align: left; /* Centering the text horizontally */
+    margin: 0 auto 0 12%; /* Ensuring the text block is centered */
+    padding: 10px;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight:500;
+}

@@ -1,0 +1,62 @@
+.button_button {
+    margin-top:10px;
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px; /* Decreased height */
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button_button::before {
+    content: "Read More";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px; /* Adjusted height */
+    pointer-events: none;
+    background: linear-gradient(135deg, red, red);
+    transform: translate(0%, 90%);
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button_button::after {
+    content: "Read More";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 50px; /* Adjusted height */
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%, -100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button_button:hover::before {
+    transform: translate(0%, 0%);
+}
+
+.button_button:hover::after {
+    transform: translate(0%, -200%);
+}
+
+.button_button:focus {
+    outline: none;
+}
+
+.button_button:active {
+    scale: 0.95;
+}

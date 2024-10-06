@@ -1,0 +1,111 @@
+.top_main_hero_section_learning_center {
+  height: 185px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.top_learning_center {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image_over_paragraph_learning_center {
+  position: absolute; /* Positioning the text absolutely within the container */
+  color: #003b5c;
+  top: 6vh;
+  width: 40%;
+  text-align: left; /* Centering the text horizontally */
+  margin: 0 auto 0 17%; /* Ensuring the text block is centered */
+  padding: 10px;
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: 500;
+}
+
+.bottom_Learning-center {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.Learning-center_paragraph {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.arrow-button {
+  display: inline-block;
+  background-color: #003b5c; /* Adjust the color as needed */
+  padding: 14px 20px; /* This controls the top/bottom and left/right padding */
+  padding-left: 25%; /* Adding extra padding on the left to shift the text right */
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-left: -40%;
+  width: 70%;
+}
+
+.arrow-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -19px; /* Adjust this for arrow size */
+  width: 0;
+  height: 0;
+  border-top: 27px solid transparent; /* Same as the height */
+  border-bottom: 27px solid transparent; /* Same as the height */
+  border-left: 20px solid #003b5c; /* Same as background color */
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  color: red; /* Default color */
+}
+
+.accordion-header.open h3 {
+  color: red; /* Change color to red when open */
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+}
+
+.accordion-icon.open {
+  color: red; /* Optional: Change icon color when open */
+}
+
+.bottom_heading_learning {
+  margin-top: 50px;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .bottom_Learning-center {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .arrow-button {
+    padding-left: 12%;
+    margin-left: -8%;
+    text-align: left;
+  }
+}

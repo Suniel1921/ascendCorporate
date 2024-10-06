@@ -1,0 +1,50 @@
+   .chatBoxContainer {
+    position: relative;
+    cursor: move;
+    border: 2px solid var(--darkBlue);
+    border-radius: 5px;
+    width: 22em;
+    padding: 15px;
+    background-color: var(--whiteColor);
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--darkBlue);
+  }
+  
+  .chatContent h2 {
+    color: #3c3c3c;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 13px;
+  }
+  
+  .chat_mgs_icon {
+    font-size: 84px;
+    color: var(--darkBlue);
+  }
+  
+  .chatBtn {
+    background-color: #D1344F;
+    color: var(--whiteColor);
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+
+
+

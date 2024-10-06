@@ -1,0 +1,25 @@
+
+  
+  .editInfo {
+    margin-top: 20px;
+    height: 100vh;
+  }
+  
+  .companyInfoTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .companyInfoTable th {
+    color: black;
+  }
+  
+  .companyInfoTable th, .companyInfoTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .companyInfoTable th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  

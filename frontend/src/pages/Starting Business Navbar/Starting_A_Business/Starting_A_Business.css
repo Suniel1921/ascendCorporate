@@ -1,0 +1,130 @@
+.top_main_hero_section_starting_a_business {
+    height: 185px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+  }
+  
+  .top_starting_a_business {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .starting-accordion-content{
+    padding: 10px;
+  }
+
+  .accordion-link {
+    margin-left: 10px;
+    color: #d1344f;
+  }
+  
+  .image_over_paragraph_starting_a_business {
+    position: absolute; /* Positioning the text absolutely within the container */
+    color: #003B5C;
+    top: 6vh;
+    width: 40%;
+    text-align: left; /* Centering the text horizontally */
+    margin: 0 auto 0 17%; /* Ensuring the text block is centered */
+    padding: 10px;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: 500;
+  }
+  
+  .bottom_Starting_A_Business {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .Starting_A_Business_paragraph {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .starting-accordion-section {
+    margin: 20px auto;
+  }
+  
+  .starting-arrow-button {
+    display: inline-block;
+    background-color: #003b5c; /* Adjust the color as needed */
+    padding: 14px 20px; /* This controls the top/bottom and left/right padding */
+    padding-left: 25%; /* Adding extra padding on the left to shift the text right */
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+    white-space: nowrap;
+    margin-left: -40%;
+    width: 70%;
+  }
+  
+  .starting-arrow-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -19px; /* Adjust this for arrow size */
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent; /* Same as the height */
+    border-bottom: 27px solid transparent; /* Same as the height */
+    border-left: 20px solid #003b5c; /* Same as background color */
+  }
+  
+  .starting-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .starting-accordion-header h3 {
+    margin: 0;
+    color: #D1344F; /* Default color */
+  }
+  
+  .starting-accordion-header.open h3 {
+    color: #D1344F; /* Change color to red when open */
+  }
+  .starting-accordion-content{
+    color:#666666;
+    text-align:justify;
+  }
+  .starting-accordion-icon {
+    font-size: 1.5rem;
+  }
+  
+  .starting-accordion-icon.open {
+    color: red; /* Optional: Change icon color when open */
+  }
+  
+  .starting-bottom-heading {
+    margin-top: 50px;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .bottom_Starting_A_Business {
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+    }
+    .starting-arrow-button {
+      padding-left: 12%;
+      margin-left: -8%;
+      text-align: left;
+    }
+  }
+  

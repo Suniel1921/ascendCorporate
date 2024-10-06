@@ -1,0 +1,33 @@
+.fwa-Dissolution-container {
+    padding: 20px;
+}
+
+.fwa-Dissolution-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-Dissolution-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-Dissolution-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-Dissolution-section {
+    margin-top: 40px;
+}
+
+.fwa-Dissolution-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-Dissolution-back-to-top:hover {
+    text-decoration: underline;
+}

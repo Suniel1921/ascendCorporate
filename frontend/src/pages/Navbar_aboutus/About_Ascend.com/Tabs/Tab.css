@@ -1,0 +1,81 @@
+.tabs-container {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.tabs-buttons {
+  display: flex;
+  margin: 5px 2px 10px 5px;
+}
+
+.tab-button {
+  padding: 8px 20px; /* Adjust padding to create a gap between borders */
+  cursor: pointer;
+  border-right: 1px solid gray; /* Thin line between tabs */
+  /* border-bottom: 2px solid red; */
+  padding-left: 25px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  border-radius: 0px;
+  background-color: transparent; /* Remove background */
+  /* border-bottom-width: thick; */
+  border-bottom: 12px solid #d1344f;
+  padding-bottom: 20px;
+}
+
+.tab-button:last-child {
+  border-right: none; /* Remove the right border from the last tab */
+}
+
+.tab-button:hover {
+  /* background-color: #e0e0e0; */
+}
+
+.tab-button.active {
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 20px;
+  margin: 0px 2px 0px 0px;
+  /* border: 1px solid #ddd; */
+  background-color: #fff;
+}
+
+ul.service-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+ul.service-list li {
+  position: relative;
+  padding: 10px 0px 0px 40px; /* Add extra space for the tick mark */
+  color: #333;
+}
+
+ul.service-list li:last-child {
+  border-bottom: none; /* Remove the border from the last item */
+}
+
+ul.service-list li::before {
+  content: "\2713"; /* Unicode character for checkmark */
+  position: absolute;
+  left: 10px;
+  color: #4CAF50; /* Green checkmark color */
+  font-size: 16px;
+  line-height: 1; /* Align checkmark with text */
+}
+
+.Tabs_paragraph {
+  font-size: 1rem;
+}
+
+
+
+@media(max-width:768px){
+  .tabs-container {
+    width: 90%;
+    margin: 40px auto;
+  }
+}

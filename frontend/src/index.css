@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root{
+  --ligthBlue: #2596be;
+  --darkBlue: #006998;
+  --mixBlue: #058dbf;
+  --cherryRed : #006998;
+  --blackColor: #000000;
+  --whiteColor: #ffffff;
+  --grayColor: #808080;
+  --darkGrayColor: #a9a9a9;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+
+.list, a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.paraTextSize {
+  font-size: 1rem;
+
+}
+
+
+form input{
+  background-color: transparent;
+}
+
+.link{
+  color: black;
+}
+
+
+
+.userDashboardHeading{
+  margin-top: 62px;
+}
+
+
+
+
+
+
+
+
+/* dark mode  */
+
+
+
+
+/* Default (light theme) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* 
+.navbar_container {
+  background-color: #ffffff;
+} */
+
+/* Dark theme */
+body.dark {
+  background-color: #1E2636;
+  color: #ffffff;
+}
+
+.navbar_container.dark {
+  /* background-color: #1E2636; */
+  background-color: #333333;
+}
+
+/* Additional dark mode styles */
+.navbar_container.dark .navbarlogo img {
+  filter: invert(1);
+}

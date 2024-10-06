@@ -1,0 +1,80 @@
+.ManageOrdersContainer{
+  height: 100vh;
+}
+.manageOrderHeading{
+  margin-top: 62px;
+}
+
+.adminUpdateBtn{
+  color: var(--whiteColor);
+}
+.selectProcessingDropdown{
+  background-color: transparent;
+}
+.selectProcessingDropdown , option{
+  background-color: transparent;
+  color: black;
+}
+
+   .ManageOrdersContainer {
+    display: flex;
+  }
+  
+  .adminDashboard {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sideMenuContainer {
+    flex: 1;
+  }
+  
+  .container {
+    flex: 4;
+    padding: 20px;
+  }
+  
+  .ordersTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableHeader, .tableRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tableHeader {
+    font-weight: bold;
+  }
+
+  
+ 
+  .tableRow div, .tableHeader div {
+    flex: 1;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color:black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* button:hover {
+    background-color: #45a049;
+  }
+   */

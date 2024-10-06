@@ -1,0 +1,207 @@
+/* Base styles */
+.Features-section {
+    background-color: #f8f9fa;
+    padding: 4rem 3rem;
+    width: 80%;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.Features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Features-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #14133B;
+    margin-bottom: 1rem;
+}
+
+.Features-description {
+    color: #6c757d;
+    width: 60%;
+    font-size: 1.3rem;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto 3rem auto;
+    line-height: 1.7rem;
+}
+
+.Features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .Features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .Features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Features-container {
+        text-align: left;
+    }
+    .Features-title {
+        text-align:left;
+        font-size:2rem;
+    }
+    .Features-description {
+        text-align: left;
+        margin: 20px 0px 2rem 0;
+        line-height: 1.7rem;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+.Features-card {
+    position: relative;
+    padding: 1.2rem 1.7rem 1rem 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(242, 241, 237, 0.6);
+    text-align: left;
+    background-color: #fff;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+.Features-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.Features-card:hover::before {
+    opacity: 1;
+}
+
+.Features-card:nth-child(2),
+.Features-card:nth-child(4),
+.Features-card:nth-child(6),
+.Features-card:nth-child(8) {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.Featured_card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.featuredcardIcon {
+    background-color: #fff;
+    border-radius: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 22px 2px;
+}
+
+.featureCardHeading h5 {
+    padding: 32px 0 0 0;
+    margin: 0 0 10px 0;
+    color: red;
+}
+
+.featureCardHeading h3 {
+    font-size: 1.2rem;
+    width: 80%;
+    margin-top: 30px;
+    color: #D1344F;
+
+}
+
+.icon_grid {
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.Featured_card_bottom {
+    padding: 41px 11px 20px 0;
+    font-size: 1.04rem;
+    line-height: 1.3rem;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.Features-card:nth-child(1):hover,
+.Features-card:nth-child(2):hover,
+.Features-card:nth-child(3):hover,
+.Features-card:nth-child(4):hover,
+.Features-card:nth-child(5):hover,
+.Features-card:nth-child(6):hover,
+.Features-card:nth-child(7):hover,
+.Features-card:nth-child(8):hover {
+    background: url('/img/Image_2.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.Features-card:hover .featureCardHeading h3,
+.Features-card:hover .Featured_card_bottom {
+    color: #fff;
+}
+
+.Features-card:hover .featureCardHeading h5 {
+    color: red;
+}
+
+.Features-card:hover .featuredcardIcon {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .Features-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #14133B;
+        margin-bottom: 1rem;
+        line-height: 40px;
+    }
+    .Features-container {
+        text-align: left;
+    }
+    .Features-description {
+        color: #6c757d;
+        width: 100%;
+        font-size: 1.1rem;
+        align-items: center;
+        text-align: left;
+        margin: 40px auto 3rem auto;
+        line-height: 1.7rem;
+    }
+    .Featured_card_bottom {
+        padding: 0;
+    }
+    .featureCardHeading h3 {
+        margin-top: 5px;
+    }
+    .featureCardHeading h5 {
+        padding: 5px 0 0 0;
+    }
+}

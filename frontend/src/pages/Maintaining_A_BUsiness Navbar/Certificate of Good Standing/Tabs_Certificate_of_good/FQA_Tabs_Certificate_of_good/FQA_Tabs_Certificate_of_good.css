@@ -1,0 +1,43 @@
+.certificate-heading {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 70px;
+    width: 60%;
+    margin: 70px auto;
+}
+
+.certificate-container {
+    padding: 20px;
+}
+
+.certificate-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certificate-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.certificate-question:hover {
+    text-decoration: underline;
+}
+
+.certificate-section {
+    margin-top: 40px;
+}
+
+.certificate-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.certificate-back-to-top:hover {
+    text-decoration: underline;
+}

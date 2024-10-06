@@ -1,0 +1,33 @@
+.fwa-Reinstatement-container {
+    padding: 20px;
+}
+
+.fwa-Reinstatement-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-Reinstatement-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-Reinstatement-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-Reinstatement-section {
+    margin-top: 40px;
+}
+
+.fwa-Reinstatement-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-Reinstatement-back-to-top:hover {
+    text-decoration: underline;
+}

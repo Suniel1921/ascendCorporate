@@ -1,0 +1,25 @@
+.fixed-background {
+    /* The image used */
+    background-image: url("/img/Image_2.jpg");
+    /* background-color: #fff; */
+    width:95%;
+    border-radius:20px;
+    object-fit:fill;
+    margin: auto auto 20px auto;
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .div-transparent {
+    height: 300px;
+
+    /* background-color: red; */
+    /* font-size: 36px */
+  }
+  

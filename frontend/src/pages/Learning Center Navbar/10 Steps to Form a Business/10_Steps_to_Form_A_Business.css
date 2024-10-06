@@ -1,0 +1,145 @@
+.Steps_to_Form_A_Business_container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Steps_to_Form_A_Business_heading {
+  text-align: center;
+  margin: 40px 0 50px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.Steps_to_Form_A_Business_main {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.Steps_to_Form_A_Business_left {
+  width: 75%;
+}
+
+.Steps_to_Form_A_Business_left img {
+  width: 100%;
+}
+
+.Steps_to_Form_A_Business_right {
+  width: 25%;
+  padding: 10px 20px 30px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  height: 300px;
+  border: 4px solid #003b5c;
+  text-align: center;
+}
+
+.Steps_to_Form_A_Business_paragraph {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.Steps_to_Form_A_Business_subheading {
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+}
+
+.Steps_to_Form_A_Business_icon {
+  color: #d32f2f;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.Steps_to_Form_A_Business_right h3 {
+  font-size: 30px;
+  color: #d1344f;
+  margin: 20px auto 10px auto;
+  width: 80%;
+  line-height: 30px;
+}
+
+.Steps_to_Form_A_Business_right p {
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+
+.Steps_to_Form_A_Business_button_full {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d1344f;
+  border-radius: 5px;
+}
+
+.Steps_to_Form_A_Business_button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #da5e73;
+  color: #fff;
+}
+
+.Steps_to_Form_A_Business_list li {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #555;
+}
+.benefit_list li {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #d1344f;
+}
+.benefit_list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Steps_to_Form_A_Business_section {
+  margin-left: 30px;
+}
+.Steps_to_Form_A_Business_button_full_left {
+  width: 30%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d1344f;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .Steps_to_Form_A_Business_container {
+    width: 90%;
+  }
+  .Steps_to_Form_A_Business_main {
+    display: block;
+  }
+  .Steps_to_Form_A_Business_left {
+    width: 100%;
+  }
+  .Steps_to_Form_A_Business_right {
+    display: block;
+    width: 100%;
+    padding: 10px 0px 30px 0px;
+    margin: 0;
+    border-radius: 8px;
+    height: auto;
+    border: none;
+    text-align: left;
+  }
+  .Steps_to_Form_A_Business_right h3 {
+    font-size: 30px;
+    color: #d1344f;
+    margin: 20px auto 10px auto;
+    width: 100%;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .Steps_to_Form_A_Business_container {
+    width: 90%;
+  }
+}

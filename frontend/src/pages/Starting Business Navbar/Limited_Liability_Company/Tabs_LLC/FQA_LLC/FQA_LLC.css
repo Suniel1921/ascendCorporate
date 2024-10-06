@@ -1,0 +1,45 @@
+.fqa-llc-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.fqa-llc-question {
+    color: #D1344F;
+    cursor: pointer;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.fqa-llc-section {
+    padding: 20px 0;
+}
+.fqa-llc-section p , ul li{
+    text-align: justify;
+}
+
+.fqa-llc-back-to-top {
+    color: #D1344F;
+    cursor: pointer;
+    text-align: left;
+}
+
+.fqa-llc-back-to-top:hover, .fqa-llc-question:hover {
+    text-decoration: underline;
+}
+
+.fqa-llc-list {
+    padding-left: 20px;
+}
+
+.fqa-llc-list-item {
+    margin-bottom: 20px;
+}
+
+.fqa-llc-sublist {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.fqa-llc-sublist-item {
+    margin-bottom: 10px;
+}

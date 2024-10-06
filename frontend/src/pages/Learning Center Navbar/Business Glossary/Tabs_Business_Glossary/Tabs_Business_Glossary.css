@@ -1,0 +1,66 @@
+.tabs-business-glossary-container {
+    width: 100%;
+}
+
+.tabs-business-glossary-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Adjust for many tabs */
+}
+
+.tabs-business-glossary-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-business-glossary-tab.tabs-business-glossary-active {
+    color: #d8345f;
+}
+
+.tabs-business-glossary-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-business-glossary-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-business-glossary-indicator.tabs-business-glossary-a { left: 0; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-b { left: 30px; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-c { left: 64px; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-d { left: 95px; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-e-g { left: 130px; width: 30px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-h-l { left: 180px; width: 30px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-m { left: 230px; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-n-o { left: 270px; width: 30px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-p { left: 318px; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-q-r { left: 355px; width: 30px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-s { left: 403px; width: 15px; }
+.tabs-business-glossary-indicator.tabs-business-glossary-t-z { left: 433px; width: 30px; }
+
+.tabs-business-glossary-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.tabs-business-glossary-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

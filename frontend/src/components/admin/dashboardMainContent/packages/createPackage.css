@@ -1,0 +1,134 @@
+/* 
+  
+  .formContainer {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  .form button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .fieldContainer {
+    margin-bottom: 20px;
+  }
+  
+  .fieldContainer label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+ 
+  
+  .listItem button {
+
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inputWithButton {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputWithButton input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .inputWithButton button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  */
+
+
+
+  .packageForm{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 444px; /* remove this line later just for testing purpose */
+    margin-top: 23px;
+  }
+
+  .packageForm input{
+    background-color: transparent;
+    /* padding: 7px 45px; */
+    width: 60%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid var(--whiteColor);
+    border-radius: 4px;
+  }
+
+
+  .packageBtn{
+    padding: 4px 12px;
+    background-color: var(--darkBlue);
+    margin: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .listDeleteBtn{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--cherryRed);
+    padding: 4px 12px;
+    margin: 8px;
+
+  }
+
+
+
+  .packageSubmitBtn{
+    padding: 10px 50px;
+    width: 70%;
+    background-color: var(--darkBlue);
+    margin: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .packageSubmitBtn:hover{
+    background-color: var(--mixBlue);
+  }
+

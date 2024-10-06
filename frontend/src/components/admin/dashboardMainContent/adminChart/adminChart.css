@@ -1,0 +1,114 @@
+/* 
+  .admin_Grid_Dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    grid-auto-rows: minmax(200px auto);
+    height: 90vh;
+    color: var(--blackColor)
+  }
+  
+  .charts {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .chartBox4{
+      grid-row: span 2;
+  }
+
+  .chartBox5{
+    grid-column: span 3;
+    grid-row: span 2;
+
+  }
+  
+  .chartBox6{
+    grid-row: span 2;
+  }
+  .chartBox8{
+    grid-column: span 2;
+  }
+
+
+ */
+
+
+
+
+
+
+
+   
+ .admin_Grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.charts {
+  background-color: #212529;
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); */
+  padding: 23px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.congratsBox {
+  grid-column: span 3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.congratsBox h3 {
+  margin-bottom: 10px;
+}
+
+.congratsBox p {
+  margin: 5px 0;
+}
+
+.congratsBox button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.chartBox1, .chartBox2, .chartBox3, .chartBox4, .chartBox5 h3, .chartBox1, .chartBox2, .chartBox3, .chartBox4, .chartBox5 p {
+  margin: 0;
+}
+
+.chartBox1, .chartBox2, .chartBox3, .chartBox4, .chartBox5 .chartIcon, .chartBox1, .chartBox2, .chartBox3, .chartBox4, .chartBox5 .chartValue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chartIcon img {
+  width: 24px;
+  height: 24px;
+}
+
+.chartValue {
+  font-size: 24px;
+  font-weight: bold;
+}

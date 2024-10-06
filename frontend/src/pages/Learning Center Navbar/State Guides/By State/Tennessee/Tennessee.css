@@ -1,0 +1,111 @@
+.top_main_hero_section_Tennessee {
+    height: 185px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.top_Tennessee_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image_over_paragraph_Tennessee {
+    position: absolute;
+    color: #003B5C;
+    top: 6vh;
+    width: 40%;
+    text-align: left;
+    margin: 0 auto 0 17%;
+    padding: 10px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.bottom_Tennessee {
+    display: flex;
+    width: 70%;
+    gap: 3%;
+    margin: 50px auto;
+}
+
+.left_side_Tennessee {
+    width: 70%;
+}
+
+.right_side_Tennessee {
+    width: 20%;
+    padding: 10px 20px 30px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 300px;
+    border: 4px solid #003b5c;
+    text-align: center;
+}
+
+.Tennessee_button_full {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #d1344f;
+    border-radius: 5px;
+}
+
+.right_h3_Tennessee {
+    font-size: 30px;
+    color: #d1344f;
+    margin: 20px auto 30px auto;
+    width: 70%;
+    line-height: 30px;
+}
+
+.right_LLC p {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+
+@media(max-width: 768px) {
+    .bottom_Tennessee {
+        display: block;
+        width: 90%;
+        gap: 0%;
+        margin: 50px auto;
+    }
+
+    .left_side_Tennessee {
+        width: 100%;
+    }
+
+    .right_side_Tennessee {
+        width: 100%;
+        padding: 10px 20px 30px 0px;
+        margin: 0 10px;
+        border-radius: 8px;
+        height: 300px;
+        border: none;
+        text-align: left;
+    }
+
+    .Tennessee_button_full {
+        width: 30%;
+        padding: 10px 10px 10px 0px;
+        color: #fff;
+        background-color: #d1344f;
+        border-radius: 5px;
+    }
+
+    .right_h3_Tennessee {
+        font-size: 30px;
+        color: #d1344f;
+        margin: 20px auto 10px auto;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    .right_LLC p {
+        font-size: 18px;
+        margin: 0 0 30px 0;
+    }
+}

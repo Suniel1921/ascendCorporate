@@ -1,0 +1,69 @@
+/* Banner styles */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bannerLink {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+    gap: 2rem; /* Space between icons */
+}
+
+.icons {
+    color: var(--whiteColor);
+    font-size: 1.5rem;
+}
+
+.NepalTechlogo {
+    width: 5%;
+}
+
+.bannerContainer {
+    background-color: var(--darkBlue);
+    padding: 10px; /* Optional: Add padding for better aesthetics */
+}
+
+/* Waving Hand Animation */
+@keyframes wave {
+    0%, 60%, 100% { transform: rotate(0deg); }
+    10%, 30%, 50% { transform: rotate(14deg); }
+    20%, 40% { transform: rotate(-8deg); }
+}
+
+.waving-hand {
+    display: inline-block;
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+    font-size: 1.2em;
+}
+
+/* Dropdown Menu Styles */
+.ant-dropdown-menu {
+    font-size: 1.2rem; /* Increase font size of dropdown items */
+}
+
+.ant-dropdown-menu-item {
+    padding: 10px 16px; /* Add padding for better spacing */
+}
+
+.ant-dropdown-menu-item a {
+    color: var(--blackColor); /* Ensure the color is consistent */
+    text-decoration: none; /* No underline */
+}
+
+/* Increase font size specifically for Menu items */
+.ant-dropdown-menu-item, 
+.ant-dropdown-menu-item a {
+    font-size: 1.2rem; /* Adjust this value to increase the font size */
+}
+
+/* Hover effect for dropdown items */
+.ant-dropdown-menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Add hover effect */
+}
+
+
+

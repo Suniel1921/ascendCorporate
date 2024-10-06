@@ -1,0 +1,117 @@
+.dba-business-name-heading {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 36px;
+    font-weight: 500;
+    width: 60%;
+    margin: 70px auto;
+}
+
+.dba-business-name-bottom-container {
+    display: flex;
+    width: 70%;
+    gap: 2rem;
+    justify-items: justified;
+    margin: 50px auto;
+}
+
+.dba-business-name-left-container {
+    width: 75%;
+}
+
+.dba-business-name-right-container {
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+.dba-business-name-right_bottom-h3{
+    font-size:20px;
+    text-align:center;
+    margin-top:40px;
+    color:#3c3c3c;
+}
+/* .DBA_Business_right_bottom p{
+    font-size:14px;
+    text-align:center;
+    margin:20px auto;
+} */
+.dba-business-name-right-container_div {
+    /* width: 20%; */
+    padding: 10px 20px 0px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 230px;
+    border: 4px solid #003b5c;
+    text-align: center;
+}
+
+.dba-business-name-button-full {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #d1344f;
+    border-radius: 5px;
+}
+
+.dba-business-name-right-h3 {
+    font-size: 30px;
+    color: #d1344f;
+    margin: 20px auto 30px auto;
+    width: 70%;
+    line-height: 30px;
+}
+
+.dba-business-name-right-container p {
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    text-align:center;
+}
+.DBA_Business_right_bottom_p{
+    padding:20px;
+}
+
+.DBA_button_fullwidth{
+    aling-itme:center;
+    textalign:center;
+    width:100%;
+    color:white;
+    background-color:#003b5C;
+    padding:10px 0;
+    margin:auto;
+}
+.DBA_button_fullwidth:hover{
+    background-color:#0475b5;
+}
+@media(max-width: 768px) {
+    .dba-business-name-bottom-container {
+        display: block;
+        width: 90%;
+        gap: 0rem;
+        justify-items: justified;
+        margin: 50px auto;
+    }
+    .dba-business-name-left-container {
+        width: 100%;
+    }
+    .dba-business-name-right-container {
+        width: 100%;
+        padding: 10px 20px 30px 0px;
+        margin: 0 10px 0 0;
+        border: none;
+        text-align: left;
+    }
+    .dba-business-name-button-full {
+        width: 30%;
+    }
+    .dba-business-name-right-h3 {
+        width: 100%;
+    }
+    .dba-business-name-heading {
+        text-align: left;
+        color: #3c3c3c;
+        font-size: 36px;
+        font-weight: 500;
+        width: 90%;
+        margin: 70px 0;
+    }
+}

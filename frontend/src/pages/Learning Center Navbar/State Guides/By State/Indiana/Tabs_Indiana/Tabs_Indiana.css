@@ -1,0 +1,57 @@
+.tabs-Indiana-container {
+    width: 100%;
+}
+
+.tabs-Indiana-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Adjust for many tabs */
+}
+
+.tabs-Indiana-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-Indiana-tab.tabs-Indiana-active {
+    color: #d8345f;
+}
+
+.tabs-Indiana-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-Indiana-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-Indiana-indicator.tabs-Indiana-corporation { left: 0; width: 60px; }
+.tabs-Indiana-indicator.tabs-Indiana-llc { left: 105px; width: 60px; }
+.tabs-Indiana-indicator.tabs-Indiana-business-licenses { left: 225px; width: 60px; }
+
+.tabs-Indiana-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.tabs-Indiana-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

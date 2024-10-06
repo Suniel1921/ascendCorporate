@@ -1,0 +1,48 @@
+.fqa-professional-corporation-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.fqa-professional-corporation-question {
+    color: #D1344F !important;
+    cursor: pointer;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.fqa-professional-corporation-section {
+    padding: 20px 0;
+}
+
+.fqa-professional-corporation-section p, 
+.fqa-professional-corporation-section ul li {
+    text-align: justify;
+}
+
+.fqa-professional-corporation-back-to-top {
+    color: #D1344F;
+    cursor: pointer;
+    text-align: left;
+}
+
+.fqa-professional-corporation-back-to-top:hover, 
+.fqa-professional-corporation-question:hover {
+    text-decoration: underline;
+}
+
+.fqa-professional-corporation-list {
+    padding-left: 20px;
+}
+
+.fqa-professional-corporation-list-item {
+    margin-bottom: 20px;
+}
+
+.fqa-professional-corporation-sublist {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.fqa-professional-corporation-sublist-item {
+    margin-bottom: 10px;
+}

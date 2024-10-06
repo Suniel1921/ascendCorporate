@@ -1,0 +1,33 @@
+.fwa-business-license-container {
+    padding: 20px;
+}
+
+.fwa-business-license-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-business-license-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-business-license-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-business-license-section {
+    margin-top: 40px;
+}
+
+.fwa-business-license-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-business-license-back-to-top:hover {
+    text-decoration: underline;
+}

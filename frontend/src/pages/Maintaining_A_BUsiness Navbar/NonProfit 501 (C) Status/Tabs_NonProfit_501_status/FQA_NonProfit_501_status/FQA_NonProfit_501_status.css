@@ -1,0 +1,43 @@
+.FQA_NonProfit_501_status-heading {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 70px;
+    width: 60%;
+    margin: 70px auto;
+}
+
+.FQA_NonProfit_501_status-container {
+    padding: 20px;
+}
+
+.FQA_NonProfit_501_status-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.FQA_NonProfit_501_status-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.FQA_NonProfit_501_status-question:hover {
+    text-decoration: underline;
+}
+
+.FQA_NonProfit_501_status-section {
+    margin-top: 40px;
+}
+
+.FQA_NonProfit_501_status-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.FQA_NonProfit_501_status-back-to-top:hover {
+    text-decoration: underline;
+}

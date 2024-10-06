@@ -1,0 +1,33 @@
+.fwa-amendments-container {
+    padding: 20px;
+}
+
+.fwa-amendments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-amendments-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-amendments-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-amendments-section {
+    margin-top: 40px;
+}
+
+.fwa-amendments-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-amendments-back-to-top:hover {
+    text-decoration: underline;
+}

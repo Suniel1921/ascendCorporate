@@ -1,0 +1,32 @@
+/* 
+.layoutContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-top: 60px; 
+    padding-bottom: 60px;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000; 
+  } */
+
+
+
+  /* .orderProgressContainer{
+    margin-top: 53px;
+  }  */

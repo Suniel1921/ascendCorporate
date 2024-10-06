@@ -1,0 +1,81 @@
+.top_main_hero_section_state_guides {
+    height: 185px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.top_State_guides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.image_over_paragraph_state {
+    position: absolute; /* Positioning the text absolutely within the container */
+    color: #003B5C;
+    top: 6vh;
+    width:40%;
+    text-align: left; /* Centering the text horizontally */
+    margin: 0 auto 0 17%; /* Ensuring the text block is centered */
+    padding: 10px;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight:500;
+}
+
+
+.bottom_bar_state_guides{
+    width:80%;
+    display:flex;
+    margin: 50px auto 30px; 
+    justify-content: space-around;
+}
+.left_side_state_guides{
+    width:50%;
+}
+.right_side_state_guides{
+    width:20%;
+}
+
+.state_getstarted{
+    margin-top:20px;
+    color:#fff;
+    background-color:#D1344F;
+    width:100%;
+    padding:10px 40px;
+}
+.country_state_guide {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.country_state_guide:focus {
+    border-color: #003B5C;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 59, 92, 0.5);
+}
+.paragraph_state_guides{
+    font-size:14px;
+}
+
+@media (max-width: 768px) {
+    .bottom_bar_state_guides{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_side_state_guides {
+        width: 90%;
+    }
+
+    .right_side_state_guides {
+        width: 80%;
+    }
+}

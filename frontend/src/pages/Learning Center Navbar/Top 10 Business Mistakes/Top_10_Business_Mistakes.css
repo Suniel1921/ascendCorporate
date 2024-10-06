@@ -1,0 +1,141 @@
+.Top_10_Business_Mistakes_container {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Top_10_Business_Mistakes_heading {
+  text-align: center;
+  margin: 40px 0 50px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.Top_10_Business_Mistakes_main {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.Top_10_Business_Mistakes_left {
+  width: 75%;
+}
+
+.Top_10_Business_Mistakes_right {
+  width: 25%;
+  padding: 10px 20px 30px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  height: 300px;
+  border: 4px solid #003b5c;
+  text-align: center;
+}
+
+.Top_10_Business_Mistakes_paragraph {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.Top_10_Business_Mistakes_subheading {
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+}
+
+.Top_10_Business_Mistakes_icon {
+  color: #d32f2f;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.Top_10_Business_Mistakes_right h3 {
+  font-size: 30px;
+  color: #d1344f;
+  margin: 20px auto 10px auto;
+  width: 80%;
+  line-height: 30px;
+}
+
+.Top_10_Business_Mistakes_right p {
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+
+.Top_10_Business_Mistakes_button_full {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d1344f;
+  border-radius: 5px;
+}
+
+.Top_10_Business_Mistakes_button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #da5e73;
+  color: #fff;
+}
+
+.Top_10_Business_Mistakes_list li {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #555;
+}
+.benefit_list li {
+  margin-left: 30px;
+  font-size: 14px;
+  color: #d1344f;
+}
+.benefit_list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Top_10_Business_Mistakes_section {
+  margin-left: 30px;
+}
+.Top_10_Business_Mistakes_button_full_left {
+  width: 30%;
+  padding: 10px;
+  color: #fff;
+  background-color: #d1344f;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .Top_10_Business_Mistakes_container {
+    width: 90%;
+  }
+  .Top_10_Business_Mistakes_main {
+    display: block;
+  }
+  .Top_10_Business_Mistakes_left {
+    width: 100%;
+  }
+  .Top_10_Business_Mistakes_right {
+    display: block;
+    width: 100%;
+    padding: 10px 0px 30px 0px;
+    margin: 0;
+    border-radius: 8px;
+    height: auto;
+    border: none;
+    text-align: left;
+  }
+  .Top_10_Business_Mistakes_right h3 {
+    font-size: 30px;
+    color: #d1344f;
+    margin: 20px auto 10px auto;
+    width: 100%;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .Top_10_Business_Mistakes_container {
+    width: 90%;
+  }
+}

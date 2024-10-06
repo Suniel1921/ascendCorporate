@@ -1,0 +1,200 @@
+.footer {
+  background-color: #0E1117;
+    color: #ccc;
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+  }
+  
+  .footer-section h2 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p,
+  .footer-section li {
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: #9fa0a2;
+    font-size: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section a {
+    color: #9fa0a2;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .right_footer a{
+    color: #9fa0a2;
+    text-decoration: none;
+    list-style: none;
+  }
+  .right_footer ul{
+    list-style: none;
+    display:flex;
+    gap :1rem;
+  }
+  .footer-section a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Vertical offset of the underline */
+    width: 0%;
+    height: 1px; /* Thickness of the underline */
+    background-color: red; /* Underline color */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .footer-section a:hover::after {
+    width: 100%; /* Expand the underline to full width */
+    left: 0; /* Position underline directly under the text */
+  }
+  
+  .footer-section a:hover {
+    color: red; /* Change text color on hover */
+  }
+  
+  .phone-number {
+    color: red;
+    font-weight: bold;
+  }
+
+  .headSetText{
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons svg {
+    font-size: 20px;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .social-icons svg:hover {
+    color: #ff414d;
+  }
+  
+  .footer-bottom {
+    width:85%;
+    margin:auto;
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    display:flex;
+    justify-content:space-between;
+    
+  }
+  
+  .footer-bottom a {
+    color: #9fa0a2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .icons-footer {
+    border: 2px solid white;
+  }
+  
+  .footer_social_icon {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .socialContainer {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+  }
+  
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+  }
+  
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+  }
+  
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+  }
+  
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: 0.3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 10px; /* Adjusted to match the icon size */
+    color: #fff; /* Ensure the icons are white */
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  @media(max-width:800px){
+    .footer-bottom{
+      display:block;
+    text-align: left;
+  
+    }
+    .right_footer ul {
+      text-align:left;
+      padding:0px;
+    }
+  
+  }

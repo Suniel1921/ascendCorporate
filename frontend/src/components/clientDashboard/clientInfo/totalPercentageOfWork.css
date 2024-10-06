@@ -1,0 +1,6 @@
+.progress-blue .ant-progress-circle {
+    .ant-progress-circle-path {
+      stroke: blue !important; /* Ensure blue color is applied */
+    }
+  }
+  

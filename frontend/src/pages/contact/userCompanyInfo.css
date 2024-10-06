@@ -1,0 +1,147 @@
+
+
+/* Main wrapper for the form and cart */
+.formAndCartWrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Form styling */
+.userCompanyInfo {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Form section styling */
+.userCompanyInfoForm > div {
+    margin-bottom: 20px;
+}
+
+/* Form labels and inputs */
+.userCompanyInfoForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.userCompanyInfoForm input,
+.userCompanyInfoForm select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Remove spinner for number input */
+.userCompanyInfoForm input[type="number"]::-webkit-inner-spin-button,
+.userCompanyInfoForm input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Button styling */
+.userCompanyInfoForm button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.userCompanyInfoForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .formAndCartWrapper {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .cartContainer {
+        width: 125%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .userCompanyInfoForm input,
+    .userCompanyInfoForm select {
+        font-size: 14px;
+    }
+
+    .userCompanyInfoForm button {
+        width: 100%;
+    }
+}
+
+.hint {
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* Tailwind alike utility classes definitions */
+.mb-8 {
+    margin-bottom: 16px;
+}
+
+.mb-1 {
+    margin-bottom: 2px;
+}
+
+.mt-2 {
+    margin-top: 4px;
+}
+
+.p-8 {
+    padding: 16px;
+}
+
+.pt-1 {
+    padding-top: 2px;
+}
+
+.pt-2 {
+    padding-top: 4px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.imp::before {
+    content: '* ';
+}
+
+.bg-slate {
+    background-color: #f8f7f2;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-4 {
+    gap: 8px;
+}
+
+.text-semibold {
+    font-weight: bold !important;
+}

@@ -1,0 +1,51 @@
+.downloadGuideInfoContainer {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input.input-error, select.input-error {
+    border-color: #D1344F;
+  }
+  
+  .error {
+    color: #D1344F;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .submitButton {
+    background-color: #D1344F;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    background-color: #d32f2f;
+  }
+  

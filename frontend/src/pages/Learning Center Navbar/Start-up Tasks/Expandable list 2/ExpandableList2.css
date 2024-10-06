@@ -1,0 +1,31 @@
+.steps-container {
+  margin-left: 40px;
+}
+
+.step-item {
+ text-align: justify;
+ margin-bottom: 10px;
+ color: #3c3c3c;
+ font-size:14px;
+}
+
+.sub-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.sub-list-item {
+  margin-bottom: 5px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #D1344F;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}

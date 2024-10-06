@@ -1,0 +1,109 @@
+.top_main_hero_section {
+    height: 185px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.top_Start_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.image_over_paragraph_start {
+    position: absolute; /* Positioning the text absolutely within the container */
+    color: #003B5C;
+    top: 6vh;
+    width:40%;
+    text-align: left; /* Centering the text horizontally */
+    margin: 0 auto 0 17%; /* Ensuring the text block is centered */
+    padding: 10px;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight:500;
+}
+
+
+.bottom_startup{
+    margin: 60px auto; 
+    display: flex;
+    gap: 30px;
+    width: 68%;
+    
+}
+.left_middlediv{
+    width: 80%;
+}
+
+.right_start{
+    width: 20%;
+    height:300px;
+
+}
+.right_middle_div{
+
+
+    margin: 0 10px 20px;
+    border-radius: 8px;
+    font-size:14px;
+    font-style: italic;
+    /* border:4px solid #003B5C; */
+    text-align:center;
+}
+
+.stat_paragraph{
+    font-size:14px;
+    text-allign:justified;
+    margin-bottom:20px;
+}
+
+
+.paragraph_quotes{
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.bottomQuotes{
+    text-align:right;
+    font-size:14px;
+    width:100%;
+    color:#757575;
+}
+.start_getstarted{
+    margin-top:20px;
+    color:#fff;
+    background-color:#D1344F;
+    width:100%;
+    padding:10px 40px;
+}
+
+
+@media(max-width:900px){
+    .bottom_startup{
+        display: block;
+        gap: 30px;
+        width: 90%;
+    }
+    .left_middlediv{
+        width: 100%;
+    }
+    .right_start{
+        width: 100%;
+    
+    }
+    .start_getstarted{
+        margin-top:20px;
+        background-color:#D1344F;
+        width:35%;
+        padding:10px 40px;
+        /* display:inline-block; */
+        align-items:center;
+        justify-content:center;
+    }
+    .image_over_paragraph_start {
+        width:80%;
+        margin: 0 auto 0 10%;
+    }
+}

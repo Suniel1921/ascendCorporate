@@ -1,0 +1,48 @@
+.fqa-none-profit-corporation-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.fqa-none-profit-corporation-question {
+    color: #D1344F !important;
+    cursor: pointer;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.fqa-none-profit-corporation-section {
+    padding: 20px 0;
+}
+
+.fqa-none-profit-corporation-section p, 
+.fqa-none-profit-corporation-section ul li {
+    text-align: justify;
+}
+
+.fqa-none-profit-corporation-back-to-top {
+    color: #D1344F;
+    cursor: pointer;
+    text-align: left;
+}
+
+.fqa-none-profit-corporation-back-to-top:hover, 
+.fqa-none-profit-corporation-question:hover {
+    text-decoration: underline;
+}
+
+.fqa-none-profit-corporation-list {
+    padding-left: 20px;
+}
+
+.fqa-none-profit-corporation-list-item {
+    margin-bottom: 20px;
+}
+
+.fqa-none-profit-corporation-sublist {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.fqa-none-profit-corporation-sublist-item {
+    margin-bottom: 10px;
+}

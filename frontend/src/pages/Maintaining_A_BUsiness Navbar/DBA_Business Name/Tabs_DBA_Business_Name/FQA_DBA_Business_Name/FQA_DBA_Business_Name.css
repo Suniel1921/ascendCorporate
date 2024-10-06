@@ -1,0 +1,43 @@
+.FQA_DBA_Business_Name-heading {
+    text-align: center;
+    color: #3c3c3c;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 70px;
+    width: 60%;
+    margin: 70px auto;
+}
+
+.FQA_DBA_Business_Name-container {
+    padding: 20px;
+}
+
+.FQA_DBA_Business_Name-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.FQA_DBA_Business_Name-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.FQA_DBA_Business_Name-question:hover {
+    text-decoration: underline;
+}
+
+.FQA_DBA_Business_Name-section {
+    margin-top: 40px;
+}
+
+.FQA_DBA_Business_Name-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.FQA_DBA_Business_Name-back-to-top:hover {
+    text-decoration: underline;
+}

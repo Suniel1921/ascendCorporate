@@ -1,0 +1,57 @@
+.tabs-Tennessee-container {
+    width: 100%;
+}
+
+.tabs-Tennessee-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Adjust for many tabs */
+}
+
+.tabs-Tennessee-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-Tennessee-tab.tabs-Tennessee-active {
+    color: #d8345f;
+}
+
+.tabs-Tennessee-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-Tennessee-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-Tennessee-indicator.tabs-Tennessee-corporation { left: 0; width: 60px; }
+.tabs-Tennessee-indicator.tabs-Tennessee-llc { left: 105px; width: 60px; }
+.tabs-Tennessee-indicator.tabs-Tennessee-business-licenses { left: 225px; width: 60px; }
+
+.tabs-Tennessee-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.tabs-Tennessee-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,68 @@
+.checkout-title{
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.card-element-wrapper {
+  margin-bottom: 1rem;
+}
+
+.card-number-wrapper, .card-expiry-cvc-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.card-expiry-cvc-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-expiry-wrapper, .card-cvc-wrapper {
+  width: 48%;
+}
+
+.card-element {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.submit-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+}
+
+.error-message, .success-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}

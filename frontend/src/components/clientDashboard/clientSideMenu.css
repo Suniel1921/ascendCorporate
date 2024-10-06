@@ -1,0 +1,19 @@
+.dropdownContainer{
+    cursor: pointer;
+}
+
+.clientImg {
+    border-radius: 50%;
+    height: 15vh;
+    width: 7vw;
+    object-fit: cover;
+    border: 2px solid var(--cherryRed);
+    margin-top: 62px;
+}
+
+.clientDataContainer h4{
+    margin-top: 12px;
+    font-size: 18px;
+
+}
+

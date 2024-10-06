@@ -1,0 +1,48 @@
+.fqa-limited-partnership-container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.fqa-limited-partnership-question {
+    color: #D1344F !important;
+    cursor: pointer;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.fqa-limited-partnership-section {
+    padding: 20px 0;
+}
+
+.fqa-limited-partnership-section p, 
+.fqa-limited-partnership-section ul li {
+    text-align: justify;
+}
+
+.fqa-limited-partnership-back-to-top {
+    color: #D1344F;
+    cursor: pointer;
+    text-align: left;
+}
+
+.fqa-limited-partnership-back-to-top:hover, 
+.fqa-limited-partnership-question:hover {
+    text-decoration: underline;
+}
+
+.fqa-limited-partnership-list {
+    padding-left: 20px;
+}
+
+.fqa-limited-partnership-list-item {
+    margin-bottom: 20px;
+}
+
+.fqa-limited-partnership-sublist {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.fqa-limited-partnership-sublist-item {
+    margin-bottom: 10px;
+}

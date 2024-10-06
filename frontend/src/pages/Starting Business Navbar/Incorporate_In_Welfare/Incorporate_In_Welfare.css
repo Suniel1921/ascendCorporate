@@ -1,0 +1,99 @@
+.top_main_hero_section_Delaware {
+  height: 185px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.top_Delaware_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image_over_paragraph_Delware {
+  position: absolute; /* Positioning the text absolutely within the container */
+  color: #003b5c;
+  top: 6vh;
+  width: 40%;
+  text-align: left; /* Centering the text horizontally */
+  margin: 0 auto 0 17%; /* Ensuring the text block is centered */
+  padding: 10px;
+  font-size: 36px; /* Adjust font size as needed */
+  font-weight: 500;
+}
+
+.right_delware_bottom {
+  width: 25%;
+  padding: 10px 20px 20px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  /* height: 300px; */
+  border: 4px solid #003b5c;
+  text-align: center;
+}
+.right_delware_bottomt h3 {
+  font-size: 32px;
+  color: #d1344f;
+  margin: 20px auto 10px auto;
+  width: 80%;
+  line-height: 40px;
+}
+
+.right_delware_bottom p {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+
+.delware_right_button_full {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #da5e73;
+  border-radius: 5px;
+}
+
+.bottom_main_container_delware {
+  width: 65%;
+  margin: 50px auto;
+}
+.top_main_bottom_delware {
+  display: flex;
+  gap: 2rem;
+}
+.left_top_main_bottom_delware {
+  width: 80%;
+}
+.right_delware_bottom {
+  width: 20%;
+}
+.delware_paragraph {
+  font-size: 14px;
+  text-align: justify;
+}
+.delware_h2 {
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+@media (max-width: 900px) {
+  .top_main_bottom_delware {
+    display: block;
+    /* gap: 2rem; */
+  }
+  .left_top_main_bottom_delware {
+    width: 100%;
+  }
+  .right_delware_bottom {
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding: 10px 20px 20px 0px;
+    margin: 0 10px 0 0;
+  }
+  .bottom_main_container_delware {
+    width: 90%;
+    margin: 50px auto;
+  }
+}

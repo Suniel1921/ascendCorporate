@@ -1,0 +1,29 @@
+
+.clientDashboard{
+    background-color: #181c1f;
+    display: flex;
+    gap: 20px;
+    color : white;
+    border-top: 2px solid var(--primaryGreenColor);
+    height: 170vh;
+}
+
+.client_Side_Menu_Container{
+    width: 20%;
+    border-right: 1px solid var(--primaryGreenColor);
+    padding: 20px;
+    background-color: #212529;
+
+}
+
+.client_Chart_Container{
+    width: 80%;
+    margin-right: 23px;
+    margin-top: 50px;
+    height: 100vh;
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+.fwa-delaware-e-filing-container {
+    padding: 20px;
+}
+
+.fwa-delaware-e-filing-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fwa-delaware-e-filing-list-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #d1344f;
+}
+
+.fwa-delaware-e-filing-question:hover {
+    text-decoration: underline;
+}
+
+.fwa-delaware-e-filing-section {
+    margin-top: 40px;
+}
+
+.fwa-delaware-e-filing-back-to-top {
+    cursor: pointer;
+    color: #d1344f;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.fwa-delaware-e-filing-back-to-top:hover {
+    text-decoration: underline;
+}

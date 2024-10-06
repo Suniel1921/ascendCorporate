@@ -1,0 +1,37 @@
+.sidebar-right {
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  .cta-box {
+    border: 2px solid #00324d;
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f9fc;
+  }
+  
+  .cta-box h3 {
+    color: #d43f48;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .cta-box p {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .cta-box button {
+    background-color: #d43f48;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-box button:hover {
+    background-color: #b2323b;
+  }
+  

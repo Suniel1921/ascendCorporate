@@ -1,0 +1,107 @@
+.top_main_hero_section_S_Corporaton {
+    height: 185px;
+    width: 100%;
+    overflow: hidden;
+    position: relative; /* Positioning the container relative to allow absolute positioning of the text */
+}
+
+.top_S_Corporaton_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.image_over_paragraph_S_Corporaton {
+    position: absolute; /* Positioning the text absolutely within the container */
+    color: #003B5C;
+    top: 6vh;
+    width:40%;
+    text-align: left; /* Centering the text horizontally */
+    margin: 0 auto 0 17%; /* Ensuring the text block is centered */
+    padding: 10px;
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight:500;
+}
+
+.bottom_S_Corporation{
+    display:flex;
+    width:70%;
+    gap:3%;
+    margin:50px auto;
+}
+.left_side_S_corporation{
+    width:70%
+}
+
+.right_side_S_corporation {
+    width: 20%;
+    padding: 10px 20px 30px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 300px;
+    border: 4px solid #003b5c;
+    text-align: center;
+  }
+  .S_corporation_button_full {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #d1344f;
+    border-radius: 5px;
+  }
+  
+  .right_h3_S_corportion {
+    font-size: 30px;
+    color: #d1344f;
+    margin: 20px auto 30px auto;
+    width: 70%;
+    line-height: 30px;
+  }
+  .right_LLC p {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+  }
+
+
+
+  @media(max-width:768px){
+    .bottom_S_Corporation{
+      display:block;
+      width:90%;
+      gap:0%;
+      margin:50px auto;
+  }
+  .left_side_S_corporation{
+    width:100%
+}
+
+.right_side_S_corporation {
+    width: 100%;
+    padding: 10px 20px 30px 0px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 300px;
+    border: none;
+    text-align: left;
+  }
+  .S_corporation_button_full {
+    width: 30%;
+    padding: 10px 10px 10px 0px;
+    color: #fff;
+    background-color: #d1344f;
+    border-radius: 5px;
+  }
+  .right_h3_S_corportion {
+    font-size: 30px;
+    color: #d1344f;
+    margin: 20px auto 10px auto;
+    width: 100%;
+    line-height: 30px;
+  }
+  .right_LLC p {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+  }
+  }

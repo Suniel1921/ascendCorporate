@@ -1,0 +1,90 @@
+.tabs-professional-corporation-container {
+    width: 100%;
+}
+
+.tabs-professional-corporation-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.tabs-professional-corporation-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-professional-corporation-tab.tabs-professional-corporation-active {
+    color: #d8345f;
+}
+
+.tabs-professional-corporation-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-professional-corporation-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    width: 60px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-professional-corporation-indicator.tabs-professional-corporation-overview {
+    width: 60px;
+    left: 0;
+}
+
+.tabs-professional-corporation-indicator.tabs-professional-corporation-faqs {
+    width: 60px;
+    left: 88px;
+}
+
+.tabs-professional-corporation-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.tabs-professional-corporation-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tabs-professional-corporation-tab-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.tabs-professional-corporation-tab-content ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.tabs-professional-corporation-tab-content ol {
+    margin-left: 30px;
+}
+
+.tabs-professional-corporation-tab-content li {
+    margin-bottom: 2px;
+    font-size: 14px;
+    /* color:#666666; */
+}
+
+.tabs-professional-corporation-overview-button {
+    width: 30%;
+    padding: 10px;
+    color: #fff;
+    background-color: #d1344f;
+    border-radius: 5px;
+}

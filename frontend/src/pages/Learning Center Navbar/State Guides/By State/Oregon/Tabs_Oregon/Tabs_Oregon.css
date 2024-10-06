@@ -1,0 +1,57 @@
+.tabs-Oregon-container {
+    width: 100%;
+}
+
+.tabs-Oregon-tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Adjust for many tabs */
+}
+
+.tabs-Oregon-tab {
+    margin-right: 20px;
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tabs-Oregon-tab.tabs-Oregon-active {
+    color: #d8345f;
+}
+
+.tabs-Oregon-tab-indicator {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #d8345f;
+}
+
+.tabs-Oregon-indicator {
+    position: absolute;
+    top: -16px;
+    height: 16px;
+    background-color: #d8345f;
+    transition: left 0.3s ease;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
+}
+
+.tabs-Oregon-indicator.tabs-Oregon-corporation { left: 0; width: 60px; }
+.tabs-Oregon-indicator.tabs-Oregon-llc { left: 105px; width: 60px; }
+.tabs-Oregon-indicator.tabs-Oregon-business-licenses { left: 225px; width: 60px; }
+
+.tabs-Oregon-tab-content {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.tabs-Oregon-tab-content h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
