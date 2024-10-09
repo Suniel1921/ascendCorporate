@@ -18,7 +18,7 @@ exports.contact = async (req, res) => {
       !state ||
       !postalCode ||
       !phoneNumber ||
-      !secondaryPhoneNumber ||
+      // !secondaryPhoneNumber ||
       !email ||
       !confirmEmail ||
       !industry
@@ -39,7 +39,7 @@ exports.contact = async (req, res) => {
       state,
       postalCode,
       phoneNumber,
-      secondaryPhoneNumber,
+      // secondaryPhoneNumber,
       email,
       confirmEmail,
       industry,

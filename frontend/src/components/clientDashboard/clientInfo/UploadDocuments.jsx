@@ -79,8 +79,7 @@ const UploadDocuments = () => {
               onChange={handleNameChange}
               className="nameInput"
             />
-            <label htmlFor="fileInput" className="customFileUpload">
-              Choose files
+            {/* <label htmlFor="fileInput" className="customFileUpload"> */}
               <input
                 id="fileInput"
                 type="file"
@@ -88,7 +87,7 @@ const UploadDocuments = () => {
                 onChange={handleFileChange}
                 className="fileInput"
               />
-            </label>
+            {/* </label> */}
             <button type="submit" className="uploadButton">
               Upload Documents
             </button>

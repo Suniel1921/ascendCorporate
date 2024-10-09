@@ -148,7 +148,7 @@ const Front_page = () => {
       <FixedBackground />
       {/* <Blog /> */}
       <FeedbackForm />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );

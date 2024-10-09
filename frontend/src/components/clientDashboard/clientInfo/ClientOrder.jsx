@@ -59,6 +59,7 @@ const ClientOrder = () => {
     const fetchOrderCount = async () => {
       try {
         const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/order-count`);
+        console.log('order count is ', response)
         if(response.data.success){
           setOrderCount(response.data.orderCount);
         }

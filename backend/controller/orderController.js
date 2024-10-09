@@ -9,7 +9,7 @@ exports.createOrder = async (req, res) => {
             total,
             status: status || 'pending'
         });
-        const savedOrder = await newOrder.save();
+        const savedOrder = await newOrder.save(); 
         res.status(201).json(savedOrder);
     } catch (err) {
         res.status(500).json({ message: err.message });
@@ -48,16 +48,11 @@ exports.getYourOrders = async (req, res) => {
     }
 };
 
-// get the count of orders for the current user
-exports.getOrderCount = async (req, res) => {
-    try {
-        const userId = req.user._id;
-        const orderCount = await orderModel.countDocuments({ user: userId });
-        res.status(200).json({ success: true, orderCount });
-    } catch (error) {
-        res.status(500).json({ success: false, message: 'Internal server error' });
-    } 
-};
+
+
+
+
+
 
 
 
@@ -134,9 +129,9 @@ exports.saveOrderDetails = async (req, res) => {
             return res.status(401).json({ message: 'User not authenticated' });
         }
 
-        const { cartData, contactInfo, paymentIntentId, status } = req.body;
+        const { cartData, contactInfo, paymentIntentId, status,totalPrice } = req.body;
 
-        console.log('Received Data:', req.body);
+        // console.log('Received Data:', req.body);
 
         if (!cartData || !contactInfo || !paymentIntentId) {
             return res.status(400).json({ message: 'Missing required data' });
@@ -147,6 +142,7 @@ exports.saveOrderDetails = async (req, res) => {
             contactData: contactInfo,
             packageData: { paymentIntentId },
             user: req.user._id,
+            totalPrice,
             status: status || 'pending',
         });
 
@@ -178,12 +174,34 @@ exports.getSingleOrder = async (req, res) => {
 
 
 //get all user data
-  exports.getAllUserOrderData = async (req, res) => {
+exports.getAllUserOrderData = async (req, res) => {
     try {
-        const userId = req.user._id;
-        const orderInfo = await UserAllData.find({ user: userId }).populate({ path: 'user', select: '-password' });
+        // Fetch all orders without filtering by user
+        const orderInfo = await UserAllData.find()
+            .populate({ path: 'user', select: '-password' }); // Populate user info, excluding password
+
+        // Check if there are any orders
+        if (orderInfo.length === 0) {
+            return res.status(404).json({ success: false, message: 'No orders found.' });
+        }
+
         res.status(200).json({ success: true, message: 'Order information retrieved successfully', orderInfo });
     } catch (error) {
+        console.error('Error retrieving all order data:', error); // Log the error for debugging
+        res.status(500).json({ success: false, message: 'Internal server error' });
+    }
+};
+
+
+
+exports.getOrderCount = async (req, res) => {
+    try {
+        const userId = req.user._id;
+        const orderCount = await UserAllData.countDocuments({ user: userId });
+        console.log('Order Count:', orderCount); // Log the count
+        res.status(200).json({ success: true, orderCount });
+    } catch (error) {
+        console.error('Error fetching order count:', error); // Log any errors
         res.status(500).json({ success: false, message: 'Internal server error' });
     }
 };
@@ -214,6 +232,33 @@ exports.updateOrderStatus = async (req, res) => {
     }
 };
 
+
+
+
+
+//admin data
+
+
+exports.getTotalSales = async (req, res) => {
+    try {
+        const totalSales = await UserAllData.aggregate([
+            {
+                $group: {
+                    _id: null,
+                    total: { $sum: "$totalPrice" }  // Sum the totalPrice field
+                }
+            }
+        ]);
+
+        // Get the total sales value; it will be in an array
+        const totalAmount = totalSales[0] ? totalSales[0].total : 0;
+
+        res.status(200).json({ totalSales: totalAmount });
+    } catch (error) {
+        console.error('Error calculating total sales:', error);
+        res.status(500).json({ message: 'Internal server error', error });
+    }
+};
 
 
 

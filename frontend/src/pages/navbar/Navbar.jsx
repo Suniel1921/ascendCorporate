@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import MobileNav from './MobileNav';
 import { FaShoppingCart, FaUserAlt, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp, FaMoon, FaSun } from 'react-icons/fa';
 import { AiFillMessage } from 'react-icons/ai';
-import { Badge, Dropdown, Menu } from 'antd';
+import { Badge, Dropdown, Menu, Modal } from 'antd';
 import { useAuthGlobally } from '../../contexts/AuthContext';
 import { useCartGlobally } from '../../contexts/cartContext';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -17,6 +17,16 @@ const Navbar = () => {
   const { cart } = useCartGlobally();
   const [isSticky, setIsSticky] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const [orderCount, setOrderCount] = useState([]);
+  console.log(orderCount)
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const navigate = useNavigate();
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+
 
   const handleLogout = () => {
     setAuth({ user: null, token: null });
@@ -34,6 +44,26 @@ const Navbar = () => {
     window.open('/existing-order', '_blank', 'width=600, height=800');
   }
 
+
+  
+   // Fetch orders on mount
+   useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/order-count`); // Replace with your actual API endpoint
+        // console.log('leng is ', response)
+        setOrderCount(response.data.orderCount); // Set the number of orders
+      } catch (error) {
+        console.error('Error fetching orders:', error);
+        toast.error('Failed to fetch orders');
+      }
+    };
+
+    if (auth?.user) {
+      fetchOrders();
+    }
+  }, [auth]);
+
   const userMenu = (
     <Menu>
       {auth?.user ? (
@@ -44,9 +74,25 @@ const Navbar = () => {
             </h4>
             <hr />
           </Menu.Item>
-          <Menu.Item key="dashboard">
-            <NavLink className='dropdownLink_heading' to="/client-dashboard">Client Dashboard</NavLink>
-          </Menu.Item>
+
+            {/* Conditionally render Admin Dashboard if user role is 'admin' */}
+{/* {auth.user.role === 'admin' && (
+  <Menu.Item key="dashboard">
+    <NavLink className='dropdownLink_heading' to="/dashboard/admin">Admin Dashboard</NavLink>
+  </Menu.Item>
+)} */}
+
+{
+  orderCount > 0 ? (
+    <Menu.Item key="dashboard">
+    <NavLink className='dropdownLink_heading' to="/client-dashboard">Client Dashboard</NavLink>
+  </Menu.Item>
+  ) : (
+    <Menu.Item key="dashboard">
+    <NavLink onClick={showModal} className='dropdownLink_heading' to="#">Client Dashboard</NavLink>
+  </Menu.Item>
+  )
+}
           <Menu.Item key="update-document">
             <NavLink className='dropdownLink_heading' to="/update-document">Update Document</NavLink>
           </Menu.Item>
@@ -204,6 +250,12 @@ const Navbar = () => {
     };
   }, []);
 
+
+
+
+
+
+
   return (
     <>
       <div className={`navbar_container ${isSticky ? 'navbar_sticky' : ''}`}>
@@ -275,6 +327,36 @@ const Navbar = () => {
             {theme === 'light' ? <FaMoon /> : <FaSun />}
           </button> */}
         </div>
+
+       {/* Modal for access restriction message */}
+       <Modal
+       title="Access Denied"
+       open={isModalVisible}
+       onCancel={() => setIsModalVisible(false)}
+       footer={[
+         <button
+           key="placeOrder"
+           style={{
+             backgroundColor: '#1890ff', // Change the background color (e.g., blue)
+             color: 'white', // Change the text color (white)
+             border: 'none',
+             padding: '8px 20px',
+             borderRadius: '5px',
+             cursor: 'pointer',
+           }}
+           onClick={() => {  
+             navigate('/quote-pricing');
+             setIsModalVisible(false);
+           }}
+         >
+           Place Order
+         </button>
+       ]}
+     >
+       {/* <p>It appears you do not have any active packages associated with your account. To gain access to the Client Dashboard, please consider placing an order. Thank you for your understanding.</p> */}
+       <p>Currently, you do not have any active packages, which limits your access to the <strong>Client Dashboard</strong>. We encourage you to explore our offerings and consider placing an order to unlock this feature.</p>
+     </Modal>
+     
       </div>
       <div className='marginMobile'></div>
     </>
@@ -282,5 +364,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
 
 

@@ -51,33 +51,33 @@ const ClientSideMenu = () => {
            
            
             {/* <p><IoMdArrowDropright className="subItemIcon" /> Password</p> */}
-            <p><IoMdArrowDropright className="subItemIcon" /> Address Book</p>
+            {/* <p><IoMdArrowDropright className="subItemIcon" /> Address Book</p> */}
           </div>
         </div>
 
         <div className="dropdownContainer">
           <h3 onClick={() => toggleDropdown('category')}>
             <IoMdArrowDropright className={`icon ${dropdowns.category ? 'rotate' : ''}`} />
-            <span className="dropdownTitle">Orders</span>
+            <span className="dropdownTitle">Upload Your Document</span>
           </h3>
           <div className={`dropdownContent ${dropdowns.category ? 'open' : ''}`}>
-            <Link className='link' to='/dashboard/admin/createCategory'>
+            {/* <Link className='link' to='/dashboard/admin/createCategory'>
               <p className="subItemLink"><IoMdArrowDropright className="subItemIcon" />Order History</p>
-            </Link>
+            </Link> */}
             <Link className='link' to='/dashboard/admin/createBrand'>
-              <p className="subItemLink">
+              {/* <p className="subItemLink">
                 <IoMdArrowDropright className="subItemIcon" /> Download
-              </p>
+              </p> */}
             </Link>
             <Link className='link' to='/upload-documents'>
             <p><IoMdArrowDropright className="subItemIcon" />Documents</p>
             </Link>
-            <Link className='link' to='/dashboard/admin/createBrand'>
+            {/* <Link className='link' to='/dashboard/admin/createBrand'>
             <p><IoMdArrowDropright className="subItemIcon" />Payments</p>
-            </Link>
-            <Link className='link' to='/dashboard/admin/createBrand'>
+            </Link> */}
+            {/* <Link className='link' to='/dashboard/admin/createBrand'>
             <p><IoMdArrowDropright className="subItemIcon" />Progress</p>
-            </Link>
+            </Link> */}
           
 
           </div>

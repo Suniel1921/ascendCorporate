@@ -39,7 +39,7 @@ const contactSchema = new mongoose.Schema({
     },
     secondaryPhoneNumber : {
         type: String,
-        required: true,
+        required: false,
     },
     email : {
         type: String,

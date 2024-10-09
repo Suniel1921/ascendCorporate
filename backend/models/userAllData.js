@@ -46,6 +46,9 @@ userDocuments: {
   ref: 'Documents',
   default: null,
 },
+totalPrice:{
+  type: Number
+},
 
 status: { 
   type: String,

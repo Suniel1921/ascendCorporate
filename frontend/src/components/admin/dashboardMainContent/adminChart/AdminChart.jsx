@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../adminChart/adminChart.css';
 import { Line, Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
+import TotalSales from './TotalSales';
 
 // Static data for demonstration; replace with fetched data as needed
 const dataOrders = {
@@ -75,6 +76,8 @@ const AdminChart = () => {
       });
   }, []);
 
+
+
   return (
     <div className="admin_Grid_container">
       <div className="charts chartBox1">
@@ -90,9 +93,10 @@ const AdminChart = () => {
         <p>{orderCount} orders</p>
       </div>
       <div className="charts chartBox3">
-        <h3>Total Sales</h3>
+        {/* <h3>Total Sales</h3>
         <Line data={dataSales} />
-        <p>$47.6k</p>
+        <p>$47.6k</p> */}
+        <TotalSales/>
       </div>
       <div className="charts chartBox4">
         <h3>Total Visits</h3>

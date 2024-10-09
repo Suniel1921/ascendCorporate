@@ -1,3 +1,10 @@
+.uploadForm input{
+ margin: 23px;
+}
+
+
 .uploadDocuments{
-    margin-top: 30px;
+    margin-top: 90px;
+    padding: 34px;
+    margin: 34px;
 }

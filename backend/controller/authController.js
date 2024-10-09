@@ -103,12 +103,24 @@ exports.login = async (req, res) => {
 
         // Generate token
         const token = JWT.sign({ _id: userExists._id }, process.env.SECRET_KEY, { expiresIn: '7d' });
-        return res.status(200).json({ success: true, message: 'Login Successfull', user: { name: userExists.name, email: userExists.email }, token });
+
+        // Include role in the response
+        return res.status(200).json({
+            success: true,
+            message: 'Login Successful',
+            user: { 
+                name: userExists.name, 
+                email: userExists.email, 
+                role: userExists.role
+            }, 
+            token 
+        });
 
     } catch (error) {
         return res.status(500).json({ success: false, message: `Internal server error: ${error.message}` });
     }
 };
+
 
 // Protected route controller
 exports.protectedRoute = async (req, res) => {

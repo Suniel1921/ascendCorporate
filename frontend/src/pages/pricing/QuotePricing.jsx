@@ -303,19 +303,21 @@ const QuotePricing = () => {
             <div className="quote-search-logo">
               <SlLocationPin className="quote-icon-map" />
               <span className="countryList">
-                <select
-                  name="Country"
-                  id="Country"
-                  className="quote-select"
-                  value={selectedState}
-                  onChange={handleStateChange}
-                >
-                  {StateData.map(state => (
-                    <option key={state.abbreviation} value={state.stateName}>
-                      {state.stateName}
-                    </option>
-                  ))}
-                </select>
+              <select
+  name="Country"
+  id="Country"
+  className="quote-select"
+  value={selectedState}
+  onChange={handleStateChange}
+>
+  <option value="">Select State</option> {/* Default option */}
+  {StateData.map(state => (
+    <option key={state.abbreviation} value={state.stateName}>
+      {state.stateName}
+    </option>
+  ))}
+</select>
+
               </span>
             </div>
             <hr />

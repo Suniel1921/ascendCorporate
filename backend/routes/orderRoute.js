@@ -8,7 +8,6 @@ routes.post('/createOrder', requireLogin, controller.createOrder);
 // routes.get('/getOrders', requireLogin, controller.getOrders);
 // routes.get('/yourOrder', requireLogin, controller.getYourOrders);
 // routes.put('/updateOrderStatus', requireLogin, controller.updateOrderStatus);
-routes.get('/order-count',requireLogin, controller.getOrderCount); 
 
 
 //stripe payment route
@@ -20,7 +19,10 @@ routes.post('/create-payment-intent', controller.createPaymentIntent);
 routes.post('/save-order-details', requireLogin, controller.saveOrderDetails);
 routes.get('/yourOrder', requireLogin, controller.getSingleOrder);
 routes.get('/getOrders', requireLogin, controller.getAllUserOrderData);
-routes.put('/updateOrderStatus', requireLogin, controller.updateOrderStatus);
+routes.get('/order-count',requireLogin, controller.getOrderCount); 
+routes.put('/updateOrderStatus', requireLogin, isAdmin, controller.updateOrderStatus);
+routes.get('/totalsaleprice', requireLogin, isAdmin, controller.getTotalSales)
+
 
 
 
