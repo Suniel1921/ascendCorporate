@@ -109,10 +109,10 @@ const TotalPercentageOfWork = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/getOrders`);
+        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/yourOrder`);
         
         // Log the API response to verify the structure
-        console.log('API Response:', response.data);
+        // console.log('API Response:', response.data);
 
         // Extract the orders from the response
         const orders = response.data.orderInfo; // Make sure to access `orderInfo`

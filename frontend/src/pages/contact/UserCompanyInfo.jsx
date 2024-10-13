@@ -126,7 +126,7 @@ const UserCompanyInfo = () => {
           navigate("/checkout");
         }
       } catch (error) {
-        toast.error("Failed to submit form");
+        toast.error(error?.response?.data?.message);
       }
     },
   });

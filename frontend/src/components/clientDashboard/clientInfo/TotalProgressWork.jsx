@@ -34,8 +34,8 @@ const TotalProgressWork = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/getOrders`);
-        console.log('API Response:', response);
+        const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/order/yourOrder`);
+        // console.log('API Response:', response);
 
         if (response.status !== 200) {
           throw new Error(`Unexpected status code: ${response.status}`);

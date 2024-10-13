@@ -20,8 +20,8 @@ exports.contact = async (req, res) => {
       !phoneNumber ||
       // !secondaryPhoneNumber ||
       !email ||
-      !confirmEmail ||
-      !industry
+      !confirmEmail
+      // !industry
     ) {
       return res
         .status(400)
@@ -59,7 +59,34 @@ exports.contact = async (req, res) => {
 
 
 
-//create user company information 
+// //create user company information 
+// exports.createUserCompanyInfo = async (req, res) => {
+//   try {
+//     const userId = req.user._id; // Ensure `req.user` is not undefined
+
+//     if (!userId) {
+//       return res.status(400).json({ success: false, message: 'User ID is missing' });
+//     }
+
+  
+
+//     // Create new UserCompanyInfo with orders
+//     const newInfo = new companyInfoModel({
+//       ...req.body,
+//       user: userId,
+//     });
+
+//     await newInfo.save();
+//     res.status(201).json({ success: true, message: 'Form submitted successfully', data: newInfo });
+//   } catch (error) {
+//     res.status(500).json({ success: false, message: `Failed to submit form: ${error.message || error}` });
+//   }
+// };
+
+
+
+//bypassing duplicate form submmited
+// Create user company information
 exports.createUserCompanyInfo = async (req, res) => {
   try {
     const userId = req.user._id; // Ensure `req.user` is not undefined
@@ -68,9 +95,18 @@ exports.createUserCompanyInfo = async (req, res) => {
       return res.status(400).json({ success: false, message: 'User ID is missing' });
     }
 
-  
+    // Check if the same company data already exists for this user
+    const existingInfo = await companyInfoModel.findOne({
+      user: userId,
+      preferredName: req.body.preferredName, // Check if company name is already submitted by the same user
+      // Add other fields if necessary (like address, etc.)
+    });
 
-    // Create new UserCompanyInfo with orders
+    if (existingInfo) {
+      return res.status(400).json({ success: false, message: 'Company information already exists for this user' });
+    }
+
+    // Create new UserCompanyInfo with orders if no duplicate is found
     const newInfo = new companyInfoModel({
       ...req.body,
       user: userId,
@@ -82,6 +118,7 @@ exports.createUserCompanyInfo = async (req, res) => {
     res.status(500).json({ success: false, message: `Failed to submit form: ${error.message || error}` });
   }
 };
+
 
 
 

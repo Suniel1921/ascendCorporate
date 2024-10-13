@@ -6,7 +6,7 @@ const contactSchema = new mongoose.Schema({
     },
     middleName : {
         type: String,
-        required: true,
+        required: false,
     },
     lastName : {
         type: String,
@@ -51,7 +51,7 @@ const contactSchema = new mongoose.Schema({
     },
     industry : {
         type: String,
-        required: true,
+        required: false,
     },
 })
 
