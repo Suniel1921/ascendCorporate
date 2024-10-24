@@ -69,7 +69,7 @@ const Tabs_Business_License = () => {
                             <li>Pennsylvaina</li>
                             <li>Connecticut</li>
                         </ul>
-                        <h2>Call us at 9800000000 to get started.</h2>
+                        <h2>Call us at +1(313) 355-32950 to get started.</h2>
                         {/* <button className="tabs-business-license-overview-button">Get Started</button> */}
                     </div>
                 )}

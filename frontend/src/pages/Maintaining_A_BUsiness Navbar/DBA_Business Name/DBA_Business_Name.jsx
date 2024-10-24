@@ -15,11 +15,11 @@ const DBA_Business_Name = () => {
         </div>
         <div className='dba-business-name-right-container'>
           <div className="dba-business-name-right-container_div">
-            <h3 className='dba-business-name-right-h3'>Let's get to it.</h3>
+            <h3 className='dba-business-name-right-h3'>Let's Ascend Incoperate</h3>
             <p>Give us a call today to place your order.</p>
             <p>
               <b>
-                980000000
+                +1(313) 355-3295
               </b>
             </p>
           </div>

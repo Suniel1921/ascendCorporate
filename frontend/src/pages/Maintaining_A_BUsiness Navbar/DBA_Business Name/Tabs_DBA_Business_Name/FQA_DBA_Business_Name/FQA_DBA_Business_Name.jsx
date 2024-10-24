@@ -147,7 +147,7 @@ const FQA_DBA_Business_Name = () => {
                 State and local offices have unique rules for DBA expiration. While some state and local governments require businesses to renew DBA filings, others do not. If your business must renew its DBA registration, your state or local government office typically sends a renewal notice to the business.
                 </p>
                 <p>
-                Depending upon the location of your business, we may offer DBA renewal services in your area. Get help renewing your DBA name by contacting us at 9800000000.
+                Depending upon the location of your business, we may offer DBA renewal services in your area. Get help renewing your DBA name by contacting us at +1(313) 355-32950.
                 </p>
                 <p onClick={() => scrollToSection('top')} className="FQA_DBA_Business_Name-back-to-top">Back to Top</p>
             </div>

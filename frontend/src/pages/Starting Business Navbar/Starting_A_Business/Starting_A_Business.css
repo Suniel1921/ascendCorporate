@@ -18,7 +18,7 @@
 
   .accordion-link {
     margin-left: 10px;
-    color: #d1344f;
+    color: var(--darkBlue);
   }
   
   .image_over_paragraph_starting_a_business {
@@ -92,11 +92,11 @@
   
   .starting-accordion-header h3 {
     margin: 0;
-    color: #D1344F; /* Default color */
+    color: var(--darkBlue); /* Default color */
   }
   
   .starting-accordion-header.open h3 {
-    color: #D1344F; /* Change color to red when open */
+    color: var(--darkBlue); /* Change color to red when open */
   }
   .starting-accordion-content{
     color:#666666;

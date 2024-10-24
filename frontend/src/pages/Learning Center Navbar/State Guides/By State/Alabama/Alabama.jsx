@@ -17,7 +17,7 @@ const Alabama = () => {
           <Tabs_Alabama/>
         </div>
         <div className="right_side_Alabama">
-          <h3 className='right_h3_Alabama'>Let's get to it.</h3>
+          <h3 className='right_h3_Alabama'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Alabama_button_full">Get Started</button>
         </div>

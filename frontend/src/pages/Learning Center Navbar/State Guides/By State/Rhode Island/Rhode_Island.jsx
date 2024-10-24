@@ -17,7 +17,7 @@ const Rhode_Island = () => {
           <Tabs_Rhode_Island/>
         </div>
         <div className="right_side_Rhode_Island">
-          <h3 className='right_h3_Rhode_Island'>Let's get to it.</h3>
+          <h3 className='right_h3_Rhode_Island'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Rhode_Island_button_full">Get Started</button>
         </div>

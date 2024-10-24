@@ -18,7 +18,7 @@ const Professional_Corporation = () => {
           <Tabs_Professional_Corporation />
         </div>
         <div className="right_side_Professional_Corporation">
-          <h3 className='right_h3_Professional_Corporation'>Let's get to it.</h3>
+          <h3 className='right_h3_Professional_Corporation'>Let's Ascend Incoperate</h3>
           <p>Create your non-profit organization today.</p>
           <button className="Professional_Corporation_button_full">Get Started</button>
         </div>

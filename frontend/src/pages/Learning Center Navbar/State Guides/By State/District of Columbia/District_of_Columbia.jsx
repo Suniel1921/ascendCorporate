@@ -17,7 +17,7 @@ const District_of_Columbia = () => {
           <Tabs_District_of_Columbia/>
         </div>
         <div className="right_side_District_of_Columbia">
-          <h3 className='right_h3_District_of_Columbia'>Let's get to it.</h3>
+          <h3 className='right_h3_District_of_Columbia'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="District_of_Columbia_button_full">Get Started</button>
         </div>

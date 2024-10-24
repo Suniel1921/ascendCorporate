@@ -111,7 +111,7 @@
   padding: 10px;
 }
 .accordion-content a {
-  color: #d1344f; /* Set the link color */
+  color: var(--darkBlue); /* Set the link color */
   text-decoration: none; /* Remove underline */
 }
 

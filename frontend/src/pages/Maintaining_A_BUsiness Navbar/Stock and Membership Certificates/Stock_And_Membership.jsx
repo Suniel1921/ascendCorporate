@@ -55,7 +55,7 @@ const Stock_And_Membership = () => {
           </div>
         </div>
         <div className="stock-and-membership-right-container">
-          <h3 className='stock-and-membership-right-h3'>Let's get to it.</h3>
+          <h3 className='stock-and-membership-right-h3'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="stock-and-membership-button-full">Get Started</button>
         </div>

@@ -35,7 +35,7 @@
 }
 .right_delware_bottomt h3 {
   font-size: 32px;
-  color: #d1344f;
+  color: var(--darkBlue);
   margin: 20px auto 10px auto;
   width: 80%;
   line-height: 40px;

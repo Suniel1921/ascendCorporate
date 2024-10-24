@@ -17,7 +17,7 @@ const Minnesota = () => {
           <Tabs_Minnesota/>
         </div>
         <div className="right_side_Minnesota">
-          <h3 className='right_h3_Minnesota'>Let's get to it.</h3>
+          <h3 className='right_h3_Minnesota'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Minnesota_button_full">Get Started</button>
         </div>

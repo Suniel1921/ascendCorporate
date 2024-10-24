@@ -32,13 +32,13 @@
     width: 100%;
     padding: 10px;
     color: #fff;
-    background-color: #d1344f;
+    background-color: var(--darkBlue);
     border-radius: 5px;
 }
 
 .ein-right-h3 {
     font-size: 30px;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin: 20px auto 30px auto;
     width: 70%;
     line-height: 30px;

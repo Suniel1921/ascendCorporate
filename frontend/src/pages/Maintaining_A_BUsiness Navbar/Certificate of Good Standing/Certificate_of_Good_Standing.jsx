@@ -14,7 +14,7 @@ const Certificate_of_Good_Standing = () => {
           <Tabs_Certificate_of_good />
         </div>
         <div className="certificate-of-good-standing-right-container">
-          <h3 className='certificate-of-good-standing-right-h3'>Let's get to it.</h3>
+          <h3 className='certificate-of-good-standing-right-h3'>Let's Ascend Incoperate</h3>
           <p>Give us a call today to place your order.</p>
           <button className="business-licenses-button-full">Get Started</button>
         </div>

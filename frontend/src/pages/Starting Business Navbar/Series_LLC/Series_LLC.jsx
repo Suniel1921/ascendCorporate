@@ -18,7 +18,7 @@ const Series_LLC = () => {
           <Tabs_Series_LLC />
         </div>
         <div className="right_side_Series_LLC">
-          <h3 className='right_h3_Series_LLC'>Let's get to it.</h3>
+          <h3 className='right_h3_Series_LLC'>Let's Ascend Incoperate</h3>
           <p>Create your non-profit organization today.</p>
           <button className="Series_LLC_button_full">Get Started</button>
         </div>

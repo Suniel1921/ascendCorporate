@@ -20,14 +20,14 @@
 }
 
 .tabs-none-profit-corporation-tab.tabs-none-profit-corporation-active {
-    color: #d8345f;
+    color: var(--darkBlue);
 }
 
 .tabs-none-profit-corporation-tab-indicator {
     position: relative;
     width: 100%;
     height: 8px;
-    background-color: #d8345f;
+    background-color: var(--darkBlue);
 }
 
 .tabs-none-profit-corporation-indicator {
@@ -35,7 +35,7 @@
     top: -16px;
     height: 16px;
     width: 60px;
-    background-color: #d8345f;
+    background-color: var(--darkBlue);
     transition: left 0.3s ease;
     clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
 }
@@ -85,6 +85,6 @@
     width: 30%;
     padding: 10px;
     color: #fff;
-    background-color: #d1344f;
+    background-color: var(--darkBlue);
     border-radius: 5px;
 }

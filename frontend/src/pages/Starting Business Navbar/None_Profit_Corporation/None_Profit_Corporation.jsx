@@ -18,7 +18,7 @@ const None_Profit_Corporation = () => {
           <Tabs_None_Profit_Corporation/>
         </div>
         <div className="right_side_None_Profit_Corporation">
-          <h3 className='right_h3_None_Profit_Corporation'>Let's get to it.</h3>
+          <h3 className='right_h3_None_Profit_Corporation'>Let's Ascend Incoperate</h3>
           <p>Create your non-profit organization today.</p>
           <button className="none_profit_corporation_button_full">Get Started</button>
         </div>

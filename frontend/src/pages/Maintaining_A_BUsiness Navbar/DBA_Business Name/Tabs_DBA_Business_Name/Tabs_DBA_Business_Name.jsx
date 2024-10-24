@@ -67,7 +67,7 @@ const Tabs_DBA_Business_Name = () => {
                             Ascend can file Doing Business As names for corporations, limited liability companies (LLCs), and some sole proprietorships and partnerships. Let us know that you'd like to register a DBA name and we'll send you the right application. You just sign and return it to us and we'll take it from there. Once the state or local government has accepted your request, we'll send you an approval notice. Your DBA name will then be part of the public record.
                         </p>
                         <h4>
-                        Call us at 980000000 to get started.
+                        Call us at +1(313) 355-3295 to get started.
                         </h4>
                         
                     </div>

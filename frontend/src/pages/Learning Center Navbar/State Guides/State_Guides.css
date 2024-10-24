@@ -42,7 +42,7 @@
 .state_getstarted{
     margin-top:20px;
     color:#fff;
-    background-color:#D1344F;
+    background-color:var(--darkBlue);
     width:100%;
     padding:10px 40px;
 }

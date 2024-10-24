@@ -17,7 +17,7 @@ const Business_Glossary = () => {
           <Tabs_Business_Glossary/>
         </div>
         <div className="right_side_Business_Glossary">
-          <h3 className='right_h3_Business_Glossary'>Let's get to it.</h3>
+          <h3 className='right_h3_Business_Glossary'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Business_Glossary_button_full">Get Started</button>
         </div>

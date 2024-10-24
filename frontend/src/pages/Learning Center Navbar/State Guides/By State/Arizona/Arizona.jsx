@@ -17,7 +17,7 @@ const Arizona = () => {
           <Tabs_Arizona/>
         </div>
         <div className="right_side_Arizona">
-          <h3 className='right_h3_Arizona'>Let's get to it.</h3>
+          <h3 className='right_h3_Arizona'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Arizona_button_full">Get Started</button>
         </div>

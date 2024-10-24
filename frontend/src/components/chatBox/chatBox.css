@@ -20,7 +20,7 @@
   }
   
   .chatContent h2 {
-    color: #3c3c3c;
+    color: var(--darkBlue);
   }
   
   .box {
@@ -37,7 +37,7 @@
   }
   
   .chatBtn {
-    background-color: #D1344F;
+    background-color: var(--darkBlue);
     color: var(--whiteColor);
     padding: 10px 20px;
     cursor: pointer;

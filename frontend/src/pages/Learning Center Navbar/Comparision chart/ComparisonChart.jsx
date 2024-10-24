@@ -120,7 +120,7 @@ const ComparisionChart = () => {
 
         <div className="comparision-chartright">
           <h3>
-            Let's get to it.
+            Let's Ascend Incoperate
           </h3>
           <p>
             Create your corporation or limited liability company today.

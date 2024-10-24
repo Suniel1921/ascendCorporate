@@ -15,10 +15,10 @@ const NonProfit_501_Status = () => {
 
         </div>
         <div className="nonprofit-501-status-right-container">
-          <h3 className='nonprofit-501-status-right-h3'>Let's get to it.</h3>
+          <h3 className='nonprofit-501-status-right-h3'>Let's Ascend Incoperate</h3>
           <p>Give us a call today to place your order.</p>
           <p>
-            980000000
+            +1(313) 355-3295
           </p>
           {/* <button className="nonprofit-501-status-button-full">Get Started</button> */}
         </div>

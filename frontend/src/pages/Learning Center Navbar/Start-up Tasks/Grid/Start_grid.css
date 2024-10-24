@@ -24,7 +24,7 @@
 
 .start_icon_grid {
   font-size: 4rem;
-  color: #d1344f;
+  color: var(--darkBlue);
   font-weight: 300px;
   padding: 20px 8px 2px 8px;
   display: flex;
@@ -47,7 +47,7 @@
 }
 
 .start_h3 {
-  color: #d1344f;
+  color: var(--darkBlue);
   font-size: 20px;
   padding: 0px;
   margin-top: auto;

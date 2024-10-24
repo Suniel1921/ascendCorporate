@@ -33,7 +33,7 @@
     font-size: 30px;
     margin: 25px auto;
     width: 80%;
-    color: #d1344f;
+    color: var(--darkBlue);
   }
   
   .Taxes-main-content ul li{
@@ -45,7 +45,7 @@
   .Taxes-main-content button {
     width: 30%;
     padding: 10px 20px;
-    background-color: #d1344f;
+    background-color: var(--darkBlue);
     color: white;
     font-weight: 500;
     margin-bottom: 20px;

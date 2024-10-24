@@ -20,14 +20,14 @@
 }
 
 .custom-tab.custom-active {
-  color: #d8345f;
+  color: var(--darkBlue);
 }
 
 .custom-tab-indicator {
   position: relative;
   width: 100%;
   height: 8px;
-  background-color: #d8345f;
+  background-color: var(--darkBlue);
   /* margin-bottom: 20px; */
 }
 
@@ -36,7 +36,7 @@
   top: -16px; /* Move the indicator above the tabs */
   height: 16px;
   width: 60px; /* Adjust width based on the desired size */
-  background-color: #d8345f;
+  background-color: var(--darkBlue);
   transition: left 0.3s ease;
   clip-path: polygon(50% 0%, 100% 50%, 100% 100%, 0% 100%, 0% 50%);
 }
@@ -60,7 +60,7 @@
 .custom-tab-content h2 {
   font-size: 22px;
   margin-bottom: 10px;
-  /* color: #d8345f; */
+  /* color: var(--darkBlue); */
 }
 
 .custom-tab-content p {
@@ -114,6 +114,6 @@
   width: 30%;
   padding: 10px;
   color: #fff;
-  background-color: #d1344f;
+  background-color: var(--darkBlue);
   border-radius: 5px;
 }

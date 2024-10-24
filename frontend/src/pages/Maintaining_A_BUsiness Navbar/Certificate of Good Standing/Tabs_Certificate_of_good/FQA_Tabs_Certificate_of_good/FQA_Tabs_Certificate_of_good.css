@@ -20,7 +20,7 @@
 .certificate-list-item {
     margin: 10px 0;
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
 }
 
 .certificate-question:hover {
@@ -33,7 +33,7 @@
 
 .certificate-back-to-top {
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin-top: 20px;
     display: inline-block;
 }

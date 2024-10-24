@@ -76,7 +76,7 @@ const Business_Entity_Types = () => {
           </div>
         </div>
         <div className="business-entity-types-right-container">
-          <h3 className='business-entity-types-right-h3'>Let's get to it.</h3>
+          <h3 className='business-entity-types-right-h3'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="business-entity-types-button-full">Get Started</button>
         </div>

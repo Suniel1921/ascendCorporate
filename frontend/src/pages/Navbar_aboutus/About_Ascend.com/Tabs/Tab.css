@@ -19,7 +19,7 @@
   border-radius: 0px;
   background-color: transparent; /* Remove background */
   /* border-bottom-width: thick; */
-  border-bottom: 12px solid #d1344f;
+  border-bottom: 12px solid var(--darkBlue);
   padding-bottom: 20px;
 }
 

@@ -142,7 +142,7 @@
 
 .quote-help-links li a,
 .quote-top-states-list li a {
-  color: #d1344f;
+  color: var(--darkBlue);
   text-decoration: none;
 }
 
@@ -233,7 +233,7 @@
 .quote-select-button {
   margin-top: 20px;
   padding: 10px;
-  background-color: #d1344f;
+  background-color: var(--darkBlue);
   border: none;
   font-weight: bold;
   font-size: 1rem;

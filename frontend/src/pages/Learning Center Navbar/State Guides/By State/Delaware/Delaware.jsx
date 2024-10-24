@@ -17,7 +17,7 @@ const Delaware = () => {
           <Tabs_Delaware/>
         </div>
         <div className="right_side_Delaware">
-          <h3 className='right_h3_Delaware'>Let's get to it.</h3>
+          <h3 className='right_h3_Delaware'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Delaware_button_full">Get Started</button>
         </div>

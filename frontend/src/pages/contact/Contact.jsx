@@ -300,33 +300,32 @@ import { useNavigate } from "react-router-dom";
 import { Input, Button } from "antd";
 
 // Validation schema using Yup
+// Validation schema using Yup
 const validationSchema = Yup.object({
-  subject: Yup.string().required("Subject is required"),
-  firstName: Yup.string().required("First name is required"),
-  lastName: Yup.string().required("Last name is required"),
+  subject: Yup.string().required("Subject is required"), 
+  firstName: Yup.string().required("First name is required"), 
+  lastName: Yup.string().required("Last name is required"), 
   primaryPhone: Yup.string()
     .matches(/^\+1\d{10}$/, "Phone number must be in US format (+1XXXXXXXXXX)")
-    .required("Primary phone is required"),
-  secondaryPhone: Yup.string().matches(
-    /^\+1\d{10}$/,
-    "Phone number must be in US format (+1XXXXXXXXXX)"
-  ),
+    .required("Primary phone is required"), 
+  secondaryPhone: Yup.string().nullable().notRequired(), // Optional
   contactEmail: Yup.string()
     .email("Invalid email format")
-    .required("Contact email is required"),
+    .required("Contact email is required"), 
   confirmEmail: Yup.string()
     .oneOf([Yup.ref("contactEmail"), null], "Emails must match")
-    .required("Confirm email is required"),
-  industry: Yup.string().required("Industry is required"),
-  orderNumber: Yup.string(),
-  invoiceNumber: Yup.string(),
+    .required("Confirm email is required"), 
+  industry: Yup.string().nullable().notRequired(), // Optional
+  orderNumber: Yup.string().nullable().notRequired(), // Optional
+  invoiceNumber: Yup.string().nullable().notRequired(), // Optional
   message: Yup.string()
     .max(1000, "Message must be 1000 characters or less")
-    .required("Message is required"),
+    .required("Message is required"), 
   captcha: Yup.number()
     .required("Please complete the CAPTCHA")
     .oneOf([Yup.ref("captchaValue"), null], "CAPTCHA is incorrect"),
 });
+
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -346,18 +345,19 @@ const Contact = () => {
       secondaryPhone: "",
       contactEmail: "",
       confirmEmail: "",
-      industry: "",
-      orderNumber: "",
-      invoiceNumber: "",
+      industry: "", // Optional
+      orderNumber: "", // Optional
+      invoiceNumber: "", // Optional
       message: "",
       captcha: "",
       captchaValue: captchaValue, // Add the generated captcha value here
     },
     validationSchema,
     onSubmit: async (values) => {
+      console.log("Submitting form with values: ", values); // Log form data
       try {
         const response = await axios.post(
-          `${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/newOrder`,
+          `${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/contacts`,
           values,
           {
             headers: {
@@ -377,6 +377,7 @@ const Contact = () => {
         });
       }
     },
+    
   });
 
   return (

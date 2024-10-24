@@ -16,7 +16,7 @@ const Name_Reservation = () => {
           <Tabs_Nr/>
         </div>
         <div className="ein-right-container">
-          <h3 className='ein-right-h3'>Let's get to it.</h3>
+          <h3 className='ein-right-h3'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="ein-button-full">Get Started</button>
         </div>

@@ -10,7 +10,7 @@
 .fwa-written-consent-list-item {
     margin: 10px 0;
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
 }
 
 .fwa-written-consent-question:hover {
@@ -23,7 +23,7 @@
 
 .fwa-written-consent-back-to-top {
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin-top: 20px;
     display: inline-block;
 }

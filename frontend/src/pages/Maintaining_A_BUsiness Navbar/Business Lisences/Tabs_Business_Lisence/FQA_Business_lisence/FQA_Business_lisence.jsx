@@ -134,7 +134,7 @@ const FQA_Business_License = () => {
             <div id="Question_8" className="fwa-business-license-section">
                 <h3>What if my business operates in multiple locations?</h3>
                 <p>
-                If your business operates in more than one town, city, county, or state, you may need multiple licenses. Each Business License Compliance Package includes the business license applications and forms identified for your business in one state, county, and town or city. If you plan to conduct business in multiple locations, please contact a Business Specialist at 9800000000 (toll-free) or 9800000000 to order a package that covers more than one location. Additional fees may apply. Some of the states that are commonly home to firms doing business in more than one state are:
+                If your business operates in more than one town, city, county, or state, you may need multiple licenses. Each Business License Compliance Package includes the business license applications and forms identified for your business in one state, county, and town or city. If you plan to conduct business in multiple locations, please contact a Business Specialist at +1(313) 355-32950 (toll-free) or +1(313) 355-32950 to order a package that covers more than one location. Additional fees may apply. Some of the states that are commonly home to firms doing business in more than one state are:
                 </p>
                 <ul>
                     <li>California</li>

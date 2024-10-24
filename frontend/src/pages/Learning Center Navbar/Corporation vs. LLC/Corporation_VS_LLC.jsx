@@ -97,7 +97,7 @@ const Corporation_VS_LLC = () => {
 
         <div className="corp_vs_llc_right">
           <h3>
-            Let's get to it.
+            Let's Ascend Incoperate
           </h3>
           <p>
             Create your corporation or limited liability company today.

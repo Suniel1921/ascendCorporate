@@ -49,13 +49,13 @@
     width: 100%;
     padding: 10px;
     color: #fff;
-    background-color: #d1344f;
+    background-color: var(--darkBlue);
     border-radius: 5px;
 }
 
 .right_h3_Maine {
     font-size: 30px;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin: 20px auto 30px auto;
     width: 70%;
     line-height: 30px;
@@ -92,13 +92,13 @@
         width: 30%;
         padding: 10px 10px 10px 0px;
         color: #fff;
-        background-color: #d1344f;
+        background-color: var(--darkBlue);
         border-radius: 5px;
     }
 
     .right_h3_Maine {
         font-size: 30px;
-        color: #d1344f;
+        color: var(--darkBlue);
         margin: 20px auto 10px auto;
         width: 100%;
         line-height: 30px;

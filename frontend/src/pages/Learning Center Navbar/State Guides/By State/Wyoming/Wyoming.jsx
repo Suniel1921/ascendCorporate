@@ -17,7 +17,7 @@ const Wyoming = () => {
           <Tabs_Wyoming/>
         </div>
         <div className="right_side_Wyoming">
-          <h3 className='right_h3_Wyoming'>Let's get to it.</h3>
+          <h3 className='right_h3_Wyoming'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Wyoming_button_full">Get Started</button>
         </div>

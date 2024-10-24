@@ -4,7 +4,7 @@
 }
 
 .fqa-s-corporation-question {
-    color: #D1344F !important;
+    color: var(--darkBlue) !important;
     cursor: pointer;
     list-style-type: disc;
     margin-bottom: 20px;
@@ -18,7 +18,7 @@
 }
 
 .fqa-s-corporation-back-to-top {
-    color: #D1344F;
+    color: var(--darkBlue);
     cursor: pointer;
     text-align: left;
 }

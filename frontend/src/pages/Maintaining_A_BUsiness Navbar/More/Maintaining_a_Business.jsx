@@ -244,7 +244,7 @@ const MaintainingABusiness = () => {
           No Dumb Questions
         </h2>
         <p className='bottom_paragraph_maintainig'>
-          Get your questions answered and learn more about starting your business by calling <b>980000000</b>
+          Get your questions answered and learn more about starting your business by calling <b>+1(313) 355-3295</b>
         </p>
       </div>
     </div>

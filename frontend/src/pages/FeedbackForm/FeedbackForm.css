@@ -141,7 +141,7 @@
   }
   
   .button_send {
-    background-color: red;
+    background-color: #007bff;
     color: #ffffff;
     border: 0;
     padding-top: 0.5rem;
@@ -155,8 +155,7 @@
   }
   
   .button_send:hover {
-    background-color: #fff;
-    color:red;
+    opacity: 50%;
   }
   
   .footerText {

@@ -56,7 +56,7 @@ const FQA_S_corporation = () => {
                 Ascend will guide you through the steps to incorporate your business either online or by telephone. We simplify the process of registering your new s corp
                 </p>
                 <ul>
-                    <li>Form your s corp online or contact a Business Specialist at 9800000000.</li>
+                    <li>Form your s corp online or contact a Business Specialist at +1(313) 355-32950.</li>
                     <li>We assign your order to a Business Specialist, who contacts you if there are any problems with the preliminary name search.</li>
                     <li>We complete Articles of Incorporation on your behalf. A few states require us to get your signature on the completed documents before submission. Normally, we submit documents directly to the state.</li>
                     <li>We forward the state approval notice to you (generally within 5-10 business days, but turnaround time varies by state).</li>

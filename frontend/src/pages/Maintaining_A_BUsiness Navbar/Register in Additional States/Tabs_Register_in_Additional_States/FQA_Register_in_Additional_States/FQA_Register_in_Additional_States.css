@@ -20,7 +20,7 @@
 .FQA_Register_in_Additional_States-list-item {
     margin: 10px 0;
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
 }
 
 .FQA_Register_in_Additional_States-question:hover {
@@ -33,7 +33,7 @@
 
 .FQA_Register_in_Additional_States-back-to-top {
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin-top: 20px;
     display: inline-block;
 }

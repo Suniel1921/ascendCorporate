@@ -16,7 +16,7 @@ const LLC_Tax_Status_Election = () => {
 
         </div>
         <div className="llc-tax-status-election-right-container">
-          <h3 className='llc-tax-status-election-right-h3'>Let's get to it.</h3>
+          <h3 className='llc-tax-status-election-right-h3'>Let's Ascend Incoperate</h3>
           <p>Give us a call today to place your order.</p>
           
           <button className="llc-tax-status-election-button-full">Get Started</button>

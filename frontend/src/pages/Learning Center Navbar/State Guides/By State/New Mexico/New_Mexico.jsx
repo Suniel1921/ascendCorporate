@@ -17,7 +17,7 @@ const New_Mexico = () => {
           <Tabs_New_Mexico/>
         </div>
         <div className="right_side_New_Mexico">
-          <h3 className='right_h3_New_Mexico'>Let's get to it.</h3>
+          <h3 className='right_h3_New_Mexico'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="New_Mexico_button_full">Get Started</button>
         </div>

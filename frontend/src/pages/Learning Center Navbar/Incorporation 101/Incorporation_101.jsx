@@ -121,7 +121,7 @@ const Incorporation101 = () => {
         </div>
 
         <div className="incorporation_right">
-          <h3 className='right_h3'>Let's get to it.</h3>
+          <h3 className='right_h3'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="incorporation_button_full">Get Started</button>
         </div>

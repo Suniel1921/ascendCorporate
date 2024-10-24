@@ -14,13 +14,13 @@
   border-bottom: 1px solid #ddd;
 }
 .delware-accordion-title:hover{
-  color:#D1344f;
+  color:var(--darkBlue);
   text-decoration:underline;
 }
 .delware-sidebar h3{
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
-  color:#D1344f;
+  color:var(--darkBlue);
 }
 .delware-accordion-content {
   padding-left: 15px;
@@ -32,12 +32,12 @@
   list-style-type: none;
   padding-top: 5px;
   text-align: left;
-  color:#D1344f !important;
+  color:var(--darkBlue) !important;
   border-bottom: 1px solid #ddd;
   margin:10px 0;
 }
 
 .delware-accordion-content ul li:hover{
-  color:#D1344f !important;
+  color:var(--darkBlue) !important;
   text-decoration:underline;
 }

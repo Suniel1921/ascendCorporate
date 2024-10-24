@@ -5,7 +5,7 @@
 }
 
 .fqas-eni-question {
-    color: #D1344F;
+    color: var(--darkBlue);
     cursor: pointer;
     list-style-type: disc;
     margin-bottom: 20px;
@@ -21,7 +21,7 @@
 }
 
 .fqas-eni-back-to-top {
-    color: #D1344F;
+    color: var(--darkBlue);
     cursor: pointer;
     text-align: left; /* Align the "Back to Top" to the left */
 }

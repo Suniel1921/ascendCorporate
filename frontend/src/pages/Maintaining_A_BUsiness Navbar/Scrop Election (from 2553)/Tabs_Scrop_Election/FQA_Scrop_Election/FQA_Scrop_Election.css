@@ -20,7 +20,7 @@
 .FQA_Scorp_Election_list_item {
     margin: 10px 0;
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
 }
 
 .FQA_Scorp_Election_question:hover {
@@ -33,7 +33,7 @@
 
 .FQA_Scorp_Election_back_to_top {
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin-top: 20px;
     display: inline-block;
 }

@@ -83,7 +83,7 @@
 
 .corp_vs_llc_right h3 {
     font-size: 32px;
-    color: #d1344F;
+    color: var(--darkBlue);
     margin: 20px auto 10px auto;
     width: 80%;
     line-height: 40px;
@@ -109,7 +109,7 @@
     color: #fff;
 }
 .llc_list li{
-    color:#d1344F;
+    color:var(--darkBlue);
 }
 .llc_list li:hover{
     text-decoration:underline;

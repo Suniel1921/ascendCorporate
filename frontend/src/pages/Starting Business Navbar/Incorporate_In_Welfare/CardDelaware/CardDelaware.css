@@ -83,7 +83,7 @@
 
 .card_delware-info-section li:hover {
   /* text-decoration: underline; */
-  color:#d1344F;
+  color:var(--darkBlue);
 }
 
 

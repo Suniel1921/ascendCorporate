@@ -24,18 +24,18 @@
   }
   
   input.input-error, select.input-error {
-    border-color: #D1344F;
+    border-color: var(--darkBlue);
   }
   
   .error {
-    color: #D1344F;
+    color: var(--darkBlue);
     font-size: 12px;
     margin-top: 5px;
     text-align: left;
   }
   
   .submitButton {
-    background-color: #D1344F;
+    background-color: var(--darkBlue);
     color: white;
     padding: 15px;
     border: none;

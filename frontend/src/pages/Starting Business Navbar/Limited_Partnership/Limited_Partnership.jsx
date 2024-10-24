@@ -18,7 +18,7 @@ const Limited_Partnership = () => {
           <Tabs_Limited_Partnership />
         </div>
         <div className="right_side_Limited_Partnership">
-          <h3 className='right_h3_Limited_Partnership'>Let's get to it.</h3>
+          <h3 className='right_h3_Limited_Partnership'>Let's Ascend Incoperate</h3>
           <p>Create your non-profit organization today.</p>
           <button className="Limited_Partnership_button_full">Get Started</button>
         </div>

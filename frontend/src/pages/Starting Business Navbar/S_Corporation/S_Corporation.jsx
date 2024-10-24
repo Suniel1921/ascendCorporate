@@ -17,7 +17,7 @@ const S_Corporation = () => {
           <Tabs_S_corporation />
         </div>
         <div className="right_side_S_corporation">
-          <h3 className='right_h3_S_corportion'>Let's get to it.</h3>
+          <h3 className='right_h3_S_corportion'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="S_corporation_button_full">Get Started</button>
         </div>

@@ -90,7 +90,7 @@
   .submit-button {
     padding: 10px 20px;
     width:20%;
-    background-color: #D1344F;
+    background-color: var(--darkBlue);
     text-align: center;
     color: white;
     border: none;

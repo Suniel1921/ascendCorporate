@@ -17,7 +17,7 @@ const Washington = () => {
           <Tabs_Washington/>
         </div>
         <div className="right_side_Washington">
-          <h3 className='right_h3_Washington'>Let's get to it.</h3>
+          <h3 className='right_h3_Washington'>Let's Ascend Incoperate</h3>
           <p>Create your corporation or limited liability company today.</p>
           <button className="Washington_button_full">Get Started</button>
         </div>

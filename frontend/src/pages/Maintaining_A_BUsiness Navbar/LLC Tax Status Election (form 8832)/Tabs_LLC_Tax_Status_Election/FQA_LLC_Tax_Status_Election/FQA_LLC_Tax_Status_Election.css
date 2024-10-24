@@ -20,7 +20,7 @@
 .FQA_LLC_Tax_Status_Election-list-item {
     margin: 10px 0;
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
 }
 
 .FQA_LLC_Tax_Status_Election-question:hover {
@@ -33,7 +33,7 @@
 
 .FQA_LLC_Tax_Status_Election-back-to-top {
     cursor: pointer;
-    color: #d1344f;
+    color: var(--darkBlue);
     margin-top: 20px;
     display: inline-block;
 }

@@ -1,59 +1,61 @@
-const contactModel = require("../models/contactModel");
-const companyInfoModel = require('../models/companyInfoModel');
-const UserChat = require("../models/chatModel");
+
+// const companyInfoModel = require('../models/companyInfoModel');
+const contactModal = require('../models/contactModel');
 
 
-exports.contact = async (req, res) => {
+exports.saveContactForm = async (req, res) => {
   try {
-    const { firstName,middleName,lastName,country,street,city,state,postalCode,phoneNumber,secondaryPhoneNumber,email,confirmEmail,industry, } = req.body;
-
-    // Validation
-    if (
-      !firstName ||
-      !middleName ||
-      !lastName ||
-      !country ||
-      !street ||
-      !city ||
-      !state ||
-      !postalCode ||
-      !phoneNumber ||
-      // !secondaryPhoneNumber ||
-      !email ||
-      !confirmEmail
-      // !industry
-    ) {
-      return res
-        .status(400)
-        .json({ success: false, message: "All fields are required" });
-    }
-
-    // Save contact information in the database
-    const newContact = await contactModel.create({
+    const {
+      subject,
       firstName,
-      middleName,
       lastName,
-      country,
-      street,
-      city,
-      state,
-      postalCode,
-      phoneNumber,
-      // secondaryPhoneNumber,
-      email,
+      primaryPhone,
+      secondaryPhone,
+      contactEmail,
       confirmEmail,
       industry,
+      orderNumber,
+      invoiceNumber,
+      message,
+      captcha,
+    } = req.body;
+
+    // Create a new contact record
+    const contact = new contactModal({
+      subject,
+      firstName,
+      lastName,
+      primaryPhone,
+      secondaryPhone,
+      contactEmail,
+      confirmEmail,
+      industry,
+      orderNumber,
+      invoiceNumber,
+      message,
+      captcha,
     });
 
-    return res
-      .status(201)
-      .json({ success: true, message: "Contact saved successfully", newContact });
+    // Save the contact data to the database
+    await contact.save();
+
+    return res.status(201).json({
+      success: true,
+      message: 'New order form  submitted successfully!',
+    });
   } catch (error) {
-    return res
-      .status(500)
-      .json({ success: false, message: `${error}` });
+    console.error(error);
+    return res.status(500).json({
+      success: false,
+      message: 'An error occurred while saving the form. Please try again later.',
+    });
   }
 };
+
+
+
+
+
 
 
 

@@ -76,11 +76,11 @@
     cursor: pointer;
     text-align: center;
     font-size: 20px;
-    color: #D1344F;
+    color: var(--darkBlue);
   }
 
   .cartCardBtn {
-    background-color: #D1344F;
+    background-color: var(--darkBlue);
     color: var(--whiteColor);
     width: 90%;
     text-align: center;

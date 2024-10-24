@@ -3,7 +3,7 @@ const routes = express.Router();
 const controller = require ('../controller/contactController');
 const { requireLogin } = require('../middleware/authMiddleware');
 
-routes.post('/contacts', controller.contact);
+routes.post('/contacts', controller.saveContactForm);
 routes.post('/userCompanyInfo', requireLogin, controller.createUserCompanyInfo);
 routes.get('/getAllCompanyInfo', requireLogin, controller.getAllCompanyInfo);
 routes.post('/userChat', controller.saveUserChatData)
