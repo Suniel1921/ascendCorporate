@@ -1,115 +1,159 @@
 .top_main_hero_section_None_Profit_Corporation {
-    height: 185px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.tabs-none-profit-corporation-container h2 {
+  color: var(--deepBlue);
+}
+
+.tabs-none-profit-corporation-tab-content li {
+  margin-left: 0;
+}
+.none_profit_corporation_main_container {
+  line-height: 1.5;
 }
 
 .top_None_Profit_Corporation_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .image_over_paragraph_None_Profit_Corporation {
-    position: absolute;
-    color: #003B5C;
-    top: 6vh;
-    width: 40%;
-    text-align: left;
-    margin: 0 auto 0 17%;
-    padding: 10px;
-    font-size: 36px;
-    font-weight: 500;
+  position: absolute;
+  color: #003b5c;
+  top: 60%;
+  transform: translateY(-60%);
+  width: 50%;
+  text-align: left;
+  margin: 0 auto 0 17%;
+  padding: 10px;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .bottom_None_Profit_Corporation {
-    display: flex;
-    width: 70%;
-    gap: 3%;
-    margin: 50px auto;
+  display: flex;
+  width: 70%;
+  gap: 3%;
+  margin: 3% auto;
 }
 
 .left_side_None_Profit_Corporation {
-    width: 70%;
+  width: 70%;
 }
 
 .right_side_None_Profit_Corporation {
-    width: 20%;
-    padding: 10px 20px 30px 20px;
-    margin: 0 10px;
-    border-radius: 8px;
-    height: 300px;
-    border: 4px solid #003b5c;
-    text-align: center;
+  width: 20%;
+  padding: 10px 20px 30px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  height: 300px;
+  border: 4px solid #003b5c;
+  text-align: center;
 }
 
 .none_profit_corporation_button_full {
-    width: 100%;
-    padding: 10px;
-    color: #fff;
-    background-color: var(--darkBlue);
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--darkBlue);
+  border-radius: 5px;
 }
 
 .right_h3_None_Profit_Corporation {
-    font-size: 30px;
-    color: var(--darkBlue);
-    margin: 20px auto 30px auto;
-    width: 70%;
-    line-height: 30px;
+  font-size: 30px;
+  color: var(--darkBlue);
+  margin: 20px auto 30px auto;
+  width: 70%;
+  line-height: 30px;
 }
 
 .right_LLC p {
-    font-size: 18px;
-    margin: 0 0 30px 0;
+  font-size: 18px;
+  margin: 0 0 30px 0;
 }
 
-@media(max-width: 800px) {
-    .bottom_None_Profit_Corporation {
-        display: block;
-        width: 90%;
-        gap: 0%;
-        margin: 50px auto;
-    }
-
-    .left_side_None_Profit_Corporation {
-        width: 100%;
-    }
-
-    .right_side_None_Profit_Corporation {
-        width: 100%;
-        padding: 10px 20px 30px 0px;
-        margin: 0 10px;
-        border-radius: 8px;
-        height: 300px;
-        border: none;
-        text-align: left;
-    }
-
-    .none_profit_corporation_button_full {
-        width: 30%;
-        padding: 10px 10px 10px 0px;
-        color: #fff;
-        background-color: var(--darkBlue);
-        border-radius: 5px;
-    }
-
-    .right_h3_None_Profit_Corporation {
-        font-size: 30px;
-        color: var(--darkBlue);
-        margin: 20px auto 10px auto;
-        width: 100%;
-        line-height: 30px;
-    }
-
-    .right_LLC p {
-        font-size: 18px;
-        margin: 0 0 30px 0;
-    }
-    .image_over_paragraph_None_Profit_Corporation {
+@media (max-width: 1024px) {
+  .bottom_None_Profit_Corporation {
     width: 90%;
+  }
+  .image_over_paragraph_None_Profit_Corporation {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 2%;
+  }
 
-    }
+  .tabs-none-profit-corporation-container h2,
+  .tabs-none-profit-corporation-tab-content h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .bottom_None_Profit_Corporation {
+    display: block;
+    width: 90%;
+    gap: 0%;
+  }
+
+  .left_side_None_Profit_Corporation {
+    width: 100%;
+  }
+
+  .right_side_None_Profit_Corporation {
+    width: 100%;
+    padding: 10px 20px 30px 0px;
+    margin: 0 10px;
+    border-radius: 8px;
+    height: 300px;
+    border: none;
+    text-align: left;
+  }
+
+  .none_profit_corporation_button_full {
+    width: 30%;
+    padding: 10px 10px 10px 0px;
+    color: #fff;
+    background-color: var(--darkBlue);
+    border-radius: 5px;
+  }
+
+  .right_h3_None_Profit_Corporation {
+    font-size: 30px;
+    color: var(--darkBlue);
+    margin: 20px auto 10px auto;
+    width: 100%;
+    line-height: 30px;
+  }
+
+  .right_LLC p {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+  }
+  .image_over_paragraph_None_Profit_Corporation {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .image_over_paragraph_None_Profit_Corporation {
+    font-size: 18px;
+  }
+  .tabs-none-profit-corporation-overview-button {
+    width: 40% !important;
+  }
+
+  .tabs-none-profit-corporation-tab {
+    font-size: 18px !important;
+  }
+
+  .bottom_None_Profit_Corporation {
+    margin: 6% auto;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Benefits_of_Incorporating.css";
 import { Link, useNavigate } from "react-router-dom";
+import SideBarBox from "../../../components/sideBarBox/SideBarBox";
 
 const BenefitsOfIncorporating = () => {
   const navigate = useNavigate();
@@ -42,7 +43,8 @@ const BenefitsOfIncorporating = () => {
             S Corp, C Corp, or LLC: Which One Is Right for You?{" "}
           </h2>
           <p className="benefits_paragraph">
-          Incorporating isn’t one-size-fits-all. When choosing the best option for your business, consider the specific benefits each type offers:
+            Incorporating isn’t one-size-fits-all. When choosing the best option
+            for your business, consider the specific benefits each type offers:
           </p>
           <h4 className="benefits_h4">S Corporation:</h4>
           <ul className="benefits_list">
@@ -67,10 +69,12 @@ const BenefitsOfIncorporating = () => {
             Where Should I Incorporate My Business?
           </h2>
           <p className="benefits_paragraph">
-          Most businesses incorporate in their home state, but you can choose to incorporate in another state if it offers better benefits for your business.
+            Most businesses incorporate in their home state, but you can choose
+            to incorporate in another state if it offers better benefits for
+            your business.
           </p>
 
-          <h3>Ready to create your company?</h3>
+          <h3 className="ready-h3">Ready to create your company?</h3>
           <button
             className="benefits_button_full_left"
             onClick={() => navigate("/quote-pricing")}
@@ -80,16 +84,12 @@ const BenefitsOfIncorporating = () => {
           {/* <ComparisonChart/> */}
         </div>
 
-        <div className="benefits_right">
-          <h3 className="right_h3">Ready to Ascend Incorporate?</h3>
-          <p>Start today and secure the future of your business!</p>
-          <button
-            className="benefits_button_full"
-            onClick={() => navigate("/quote-pricing")}
-          >
-            Get Started
-          </button>
-        </div>
+        <SideBarBox
+          heading={"Ready to Ascend Incorporate?"}
+          content={"Start today and secure the future of your business!"}
+          bttnLabel={"Get Started"}
+          bttnLink={"/quote-pricing"}
+        />
       </div>
     </div>
   );

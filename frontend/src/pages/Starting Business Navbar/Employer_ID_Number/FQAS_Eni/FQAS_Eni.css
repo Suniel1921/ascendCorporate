@@ -1,49 +1,64 @@
 .fqas-eni-container {
-    /* padding: 20px; */
-    max-width: 100%;
-    margin: auto;
+  /* padding: 20px; */
+  max-width: 100%;
+  margin: auto;
 }
 
 .fqas-eni-question {
-    color: var(--darkBlue);
-    cursor: pointer;
-    list-style-type: disc;
-    margin-bottom: 20px;
+  color: var(--darkBlue);
+  cursor: pointer;
+  list-style-type: disc;
+  margin-left: 1%;
+  margin-bottom: 20px;
+}
+
+.fqas-eni-section h3 {
+  color: var(--deepBlue);
 }
 
 .fqas-eni-section {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
-.fqas-eni-section p, 
+.fqas-eni-section p,
 .fqas-eni-sublist-item {
-    text-align: justify;
+  text-align: justify;
 }
 
 .fqas-eni-back-to-top {
-    color: var(--darkBlue);
-    cursor: pointer;
-    text-align: left; /* Align the "Back to Top" to the left */
+  color: var(--darkBlue);
+  cursor: pointer;
+  text-align: left; /* Align the "Back to Top" to the left */
 }
 
-.fqas-eni-back-to-top:hover, 
+.fqas-eni-back-to-top:hover,
 .fqas-eni-question:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .fqas-eni-list {
-    padding-left: 20px;
+  padding-left: 0;
 }
 
 .fqas-eni-list-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .fqas-eni-sublist {
-    padding-left: 20px;
-    list-style-type: disc;
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
 .fqas-eni-sublist-item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+  .fqas-eni-section h3 {
+    font-size: 16px;
+  }
+
+  .fqas-eni-section {
+    padding: 5px 0;
+  }
 }

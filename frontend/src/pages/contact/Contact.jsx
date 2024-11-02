@@ -300,7 +300,6 @@ import { useNavigate } from "react-router-dom";
 import { Input, Button } from "antd";
 
 // Validation schema using Yup
-// Validation schema using Yup
 const validationSchema = Yup.object({
   subject: Yup.string().required("Subject is required"), 
   firstName: Yup.string().required("First name is required"), 
@@ -366,6 +365,7 @@ const Contact = () => {
           }
         );
         formik.resetForm();
+        navigate('/')
         formik.setStatus({ success: response.data.message });
         setCaptchaValue(generateCaptcha()); // Regenerate CAPTCHA on successful submission
       } catch (error) {

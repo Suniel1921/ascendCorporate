@@ -7,6 +7,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useCartGlobally } from '../../contexts/cartContext';
+import QuotePricing from '../pricing/QuotePricing';
 
 const Pricing_main = () => {
     const [pricingPlans, setPricingPlans] = useState([]);
@@ -79,7 +80,9 @@ const Pricing_main = () => {
 
     return (
         <div className="packageSelectionContainer pricing_main">
-            <div className="container">
+            {/******* this code show the card data  *******/}
+
+            {/* <div className="container">
                 <div className="packageHeading">
                     <h3>Select a Package for Limited Liability Company</h3>
                     <p>We offer 3 flavors of packages that range from laying the foundation to building the whole house.</p>
@@ -91,9 +94,24 @@ const Pricing_main = () => {
                         <p>No packages available.</p>
                     )}
                 </div>
+            </div> */}
+            {/* New component added as per danphe require */}
+            <div>
+            <QuotePricing/>
             </div>
         </div>
     );
 };
 
 export default Pricing_main;
+
+
+
+
+
+
+
+
+
+
+

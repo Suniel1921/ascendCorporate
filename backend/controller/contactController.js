@@ -1,7 +1,7 @@
 
-// const companyInfoModel = require('../models/companyInfoModel');
+// // const companyInfoModel = require('../models/companyInfoModel')
+const nodemailer = require('nodemailer');
 const contactModal = require('../models/contactModel');
-
 
 exports.saveContactForm = async (req, res) => {
   try {
@@ -39,20 +39,54 @@ exports.saveContactForm = async (req, res) => {
     // Save the contact data to the database
     await contact.save();
 
+    // Set up NodeMailer transporter
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    });
+
+    // Define the email options
+    const mailOptions = {
+      from: process.env.EMAIL,
+      to: contactEmail, // Send confirmation to the contact's email
+      subject: 'Thank you for contacting us!',
+      text: `Dear ${firstName} ${lastName},\n\nThank you for reaching out. We have received your message regarding ${subject}. We will get back to you as soon as possible.\n\nBest regards,\nNepal Tech Innovations`,
+    };
+
+    // Send the email
+    await transporter.sendMail(mailOptions);
+
     return res.status(201).json({
       success: true,
-      message: 'New order form  submitted successfully!',
+      message: 'New order form submitted successfully! Confirmation email sent.',
     });
   } catch (error) {
     console.error(error);
     return res.status(500).json({
       success: false,
-      message: 'An error occurred while saving the form. Please try again later.',
+      message: 'An error occurred while saving the form or sending the email. Please try again later.',
     });
   }
 };
 
 
+
+
+exports.getAllUserOderContact = async (req, res) => {
+  try {
+    const contacts = await contactModal.find({});
+    return res.status(200).json({ success: true, message: 'new order contact fetched sucessfully',contacts });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      success: false,
+      message: 'An error occurred while fetching contact data.',
+    });
+  }
+};
 
 
 

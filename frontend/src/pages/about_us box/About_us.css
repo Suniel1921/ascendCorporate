@@ -1,7 +1,7 @@
 .aboutBG {
   display: flex;
   align-items: center;
-  background-color: #FEF2F2; /* Light pink background */
+  background-color: #f2f9fe; /* Light blue background */
   padding: 5px 15px;
   border-radius: 25px; /* Rounded background */
   width: fit-content;
@@ -10,7 +10,7 @@
 .about_redDot {
   width: 8px;
   height: 8px;
-  background-color: red;
+  background-color: var(--cherryRed);
   border-radius: 50%; /* Creates the red dot */
   margin-right: 8px; /* Space between the dot and text */
 }

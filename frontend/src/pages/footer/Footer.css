@@ -59,7 +59,7 @@
     bottom: -2px; /* Vertical offset of the underline */
     width: 0%;
     height: 1px; /* Thickness of the underline */
-    background-color: red; /* Underline color */
+    background-color: var(--cherryRed); /* Underline color */
     transition: width 0.3s ease, left 0.3s ease;
   }
   
@@ -69,11 +69,11 @@
   }
   
   .footer-section a:hover {
-    color: red; /* Change text color on hover */
+    color: var(--textBlue); /* Change text color on hover */
   }
   
   .phone-number {
-    color: red;
+    color: var(--textBlue);
     font-weight: bold;
   }
 

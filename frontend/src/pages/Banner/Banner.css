@@ -1,11 +1,12 @@
-.mainBannerBG{
+.mainBannerBG {
   background: linear-gradient(97deg, rgb(0, 37, 245) 0%, rgb(84, 90, 139) 100%);
   color: white;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.childBannerBG{
+.childBannerBG {
   background-color: #007bff;
   padding: 20px;
-  transform: rotate(2deg);
+  transform: rotate(1deg);
 }

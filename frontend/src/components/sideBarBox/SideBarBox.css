@@ -1,0 +1,83 @@
+.sidebox-wrapper {
+  border: 4px solid var(--deepBlue);
+  height: 100%;
+  border-radius: 8px;
+  padding: 2% 2%;
+  width: 22%;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.sidebox-wrapper h3 {
+  color: var(--cherryRed);
+  font-size: 26px;
+}
+
+.sidebox-wrapper p {
+  font-size: 18px;
+}
+.sidebox-wrapper h3,
+.sidebox-wrapper p,
+.sidebox-wrapper button {
+  padding: 3% 0;
+}
+.sidebox-wrapper button {
+  padding: 4% 0;
+  width: 100%;
+  color: #fff;
+  background-color: var(--darkBlue);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebox-wrapper {
+    margin-top: 4%;
+    padding: 4% 2%;
+    /* border: none; */
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .sidebox-wrapper h3,
+  .sidebox-wrapper p,
+  .sidebox-wrapper button {
+    padding: 0.3%;
+  }
+
+  .sidebox-wrapper h3 {
+    font-size: 20px;
+  }
+
+  .sidebox-wrapper p {
+    font-size: 16px;
+  }
+
+  .sidebox-wrapper button {
+    width: 30%;
+    padding: 1% 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebox-wrapper {
+    margin-top: 6%;
+    padding: 6% 4%;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .sidebox-wrapper h3,
+  .sidebox-wrapper p,
+  .sidebox-wrapper button {
+    padding: 0%;
+  }
+
+  .sidebox-wrapper h3 {
+    font-size: 20px;
+  }
+
+  .sidebox-wrapper button {
+    width: 100%;
+    padding: 2.5% 0;
+  }
+}

@@ -92,6 +92,7 @@ const SideMenu = () => {
           <Link to={'/dashboard/admin/manage-orders'}> <p className='sideMenuChildHeading'><IoMdArrowDropright className="subItemIcon" /> Manage Orders</p></Link>
          <Link to={'/dashboard/admin/user-details'}> <p className='sideMenuChildHeading'><IoMdArrowDropright className="subItemIcon" />User Details</p></Link>
          <Link to={'/dashboard/admin/user-documents'}> <p className='sideMenuChildHeading'><IoMdArrowDropright className="subItemIcon" />User Documents</p></Link>
+         <Link to={'/dashboard/admin/userNewOrder'}> <p className='sideMenuChildHeading'><IoMdArrowDropright className="subItemIcon" />New Orders</p></Link>
           {/* <p className='sideMenuChildHeading'><IoMdArrowDropright className="subItemIcon" /> Test4</p>
           <p className='sideMenuChildHeading'><IoMdArrowDropright className="subItemIcon" /> Test5</p> */}
         </div>

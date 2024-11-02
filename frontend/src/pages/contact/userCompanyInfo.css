@@ -74,9 +74,6 @@
     .cartContainer {
         width: 125%;
     }
-    *{
-        overflow-x: hidden;
-    }
 }
 
 @media (max-width: 480px) {

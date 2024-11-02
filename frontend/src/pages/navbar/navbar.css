@@ -152,15 +152,20 @@
   display: flex;
   align-items: center;
   gap: 20px; 
+  padding-right: 2%;
+}
+
+.banner .ant-badge .ant-badge-count{
+  background: var(--cherryRed);
 }
 
 .banner .icons {
   font-size: 20px; 
-  color: var(--whiteColor); 
+  color: var(--cherryRed); 
 }
 
 .banner .icons:hover {
-  color: red; 
+  opacity: 0.7;
   transition: color 0.3s ease; 
 }
 
@@ -197,6 +202,7 @@
     display: none; 
   }
 
+
   .menu_icon {
     display: block; 
   }
@@ -207,7 +213,7 @@
 
   .navbar_container {
     padding: 10px; 
-    background-color: black;
+    background-color: #0C1120;
     position: absolute;
   }
 

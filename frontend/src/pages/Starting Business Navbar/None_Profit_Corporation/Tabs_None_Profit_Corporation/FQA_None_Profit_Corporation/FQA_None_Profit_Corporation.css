@@ -1,48 +1,64 @@
 .fqa-none-profit-corporation-container {
-    max-width: 100%;
-    margin: auto;
+  max-width: 100%;
+  margin: auto;
+}
+
+.fqa-none-profit-corporation-section h3 {
+  color: var(--deepBlue);
 }
 
 .fqa-none-profit-corporation-question {
-    color: var(--darkBlue) !important;
-    cursor: pointer;
-    list-style-type: disc;
-    margin-bottom: 20px;
+  color: var(--darkBlue) !important;
+  cursor: pointer;
+  list-style-type: disc;
+  margin-bottom: 20px;
 }
 
 .fqa-none-profit-corporation-section {
-    padding: 20px 0;
+  padding: 0;
 }
 
-.fqa-none-profit-corporation-section p, 
+.fqa-none-profit-corporation-section p,
 .fqa-none-profit-corporation-section ul li {
-    text-align: justify;
+  text-align: justify;
 }
 
 .fqa-none-profit-corporation-back-to-top {
-    color: var(--darkBlue);
-    cursor: pointer;
-    text-align: left;
+  color: var(--darkBlue);
+  cursor: pointer;
+  text-align: left;
 }
 
-.fqa-none-profit-corporation-back-to-top:hover, 
+.fqa-none-profit-corporation-back-to-top:hover,
 .fqa-none-profit-corporation-question:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .fqa-none-profit-corporation-list {
-    padding-left: 20px;
+  padding-left: 0;
 }
 
 .fqa-none-profit-corporation-list-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .fqa-none-profit-corporation-sublist {
-    padding-left: 20px;
-    list-style-type: disc;
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
 .fqa-none-profit-corporation-sublist-item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .fqa-none-profit-corporation-section h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .fqa-none-profit-corporation-section h3 {
+    font-size: 16px;
+  }
 }
