@@ -92,7 +92,6 @@ import DownloadGuideInfo from "./pages/downloadGuide/DownloadGuideInfo";
 import ThankYouGuide from "./pages/downloadGuide/ThankYouGuide";
 
 //state guides
-<<<<<<< HEAD
 import Alabama from './pages/Learning Center Navbar/State Guides/By State/Alabama/Alabama';
 import Alaska from './pages/Learning Center Navbar/State Guides/By State/Alaska/Alaska';
 import Arizona from './pages/Learning Center Navbar/State Guides/By State/Arizona/Arizona';
@@ -148,62 +147,7 @@ import West_Virginia from './pages/Learning Center Navbar/State Guides/By State/
 import Wisconsin from './pages/Learning Center Navbar/State Guides/By State/Wisconsin/Wisconsin';
 import Wyoming from './pages/Learning Center Navbar/State Guides/By State/Wyoming/Wyoming';
 import UserNewOrder from './components/admin/dashboardMainContent/userDetails/UserNewOrder';
-=======
-import Alabama from "./pages/Learning Center Navbar/State Guides/By State/Alabama/Alabama";
-import Alaska from "./pages/Learning Center Navbar/State Guides/By State/Alaska/Alaska";
-import Arizona from "./pages/Learning Center Navbar/State Guides/By State/Arizona/Arizona";
-import Arkansas from "./pages/Learning Center Navbar/State Guides/By State/Arkansas/Arkansas";
-import California from "./pages/Learning Center Navbar/State Guides/By State/California/California";
-import Colorado from "./pages/Learning Center Navbar/State Guides/By State/Colorado/Colorado";
-import Connecticut from "./pages/Learning Center Navbar/State Guides/By State/Connecticut/Connecticut";
-import Delaware from "./pages/Learning Center Navbar/State Guides/By State/Delaware/Delaware";
-import District_of_Columbia from "./pages/Learning Center Navbar/State Guides/By State/District of Columbia/District_of_Columbia";
-import Florida from "./pages/Learning Center Navbar/State Guides/By State/Florida/Florida";
-import Georgia from "./pages/Learning Center Navbar/State Guides/By State/Georgia/Georgia";
-import Hawaii from "./pages/Learning Center Navbar/State Guides/By State/Hawaii/Hawaii";
-import Idaho from "./pages/Learning Center Navbar/State Guides/By State/Idaho/Idaho";
-import Illinois from "./pages/Learning Center Navbar/State Guides/By State/Illinois/Illinois";
-import Indiana from "./pages/Learning Center Navbar/State Guides/By State/Indiana/Indiana";
-import Iowa from "./pages/Learning Center Navbar/State Guides/By State/Iowa/Iowa";
-import Kansas from "./pages/Learning Center Navbar/State Guides/By State/Kansas/Kansas";
-import Kentucky from "./pages/Learning Center Navbar/State Guides/By State/Kentucky/Kentucky";
-import Louisiana from "./pages/Learning Center Navbar/State Guides/By State/Louisiana/Louisiana";
-import Maine from "./pages/Learning Center Navbar/State Guides/By State/Maine/Maine";
-import Maryland from "./pages/Learning Center Navbar/State Guides/By State/Maryland/Maryland";
-import Massachusetts from "./pages/Learning Center Navbar/State Guides/By State/Massachusetts/Massachusetts";
-import Michigan from "./pages/Learning Center Navbar/State Guides/By State/Michigan/Michigan";
-import Minnesota from "./pages/Learning Center Navbar/State Guides/By State/Minnesota/Minnesota";
-import Mississippi from "./pages/Learning Center Navbar/State Guides/By State/Mississippi/Mississippi";
-import Missouri from "./pages/Learning Center Navbar/State Guides/By State/Missouri/Missouri";
-import Montana from "./pages/Learning Center Navbar/State Guides/By State/Montana/Montana";
-import Nebraska from "./pages/Learning Center Navbar/State Guides/By State/Nebraska/Nebraska";
-import Nevada from "./pages/Learning Center Navbar/State Guides/By State/Nevada/Nevada";
->>>>>>> b7d341d697f18907e4b843d5f6ce1970afd11aff
 
-import UserDocuments from "./components/admin/dashboardMainContent/userDetails/UserDocuments";
-
-import New_Hampshire from "./pages/Learning Center Navbar/State Guides/By State/New Hampshire/New_Hampshire";
-import New_Jersey from "./pages/Learning Center Navbar/State Guides/By State/New Jersey/New_Jersey";
-import New_Mexico from "./pages/Learning Center Navbar/State Guides/By State/New Mexico/New_Mexico";
-import New_York from "./pages/Learning Center Navbar/State Guides/By State/New York/New_York";
-import North_Carolina from "./pages/Learning Center Navbar/State Guides/By State/North Carolina/North_Carolina";
-import North_Dakota from "./pages/Learning Center Navbar/State Guides/By State/North Dakota/North_Dakota";
-import Ohio from "./pages/Learning Center Navbar/State Guides/By State/Ohio/Ohio";
-import Oklahoma from "./pages/Learning Center Navbar/State Guides/By State/Oklahoma/Oklahoma";
-import Oregon from "./pages/Learning Center Navbar/State Guides/By State/Oregon/Oregon";
-import Pennsylvania from "./pages/Learning Center Navbar/State Guides/By State/Pennsylvania/Pennsylvania";
-import Rhode_Island from "./pages/Learning Center Navbar/State Guides/By State/Rhode Island/Rhode_Island";
-import South_Carolina from "./pages/Learning Center Navbar/State Guides/By State/South Carolina/South_Carolina";
-import South_Dakota from "./pages/Learning Center Navbar/State Guides/By State/South Dakota/South_Dakota";
-import Tennessee from "./pages/Learning Center Navbar/State Guides/By State/Tennessee/Tennessee";
-import Texas from "./pages/Learning Center Navbar/State Guides/By State/Texas/Texas";
-import Utah from "./pages/Learning Center Navbar/State Guides/By State/Utah/Utah";
-import Vermont from "./pages/Learning Center Navbar/State Guides/By State/Vermont/Vermont";
-import Virginia from "./pages/Learning Center Navbar/State Guides/By State/Virginia/Virginia";
-import Washington from "./pages/Learning Center Navbar/State Guides/By State/Washington/Washington";
-import West_Virginia from "./pages/Learning Center Navbar/State Guides/By State/West Virginia/West_Virginia";
-import Wisconsin from "./pages/Learning Center Navbar/State Guides/By State/Wisconsin/Wisconsin";
-import Wyoming from "./pages/Learning Center Navbar/State Guides/By State/Wyoming/Wyoming";
 
 const App = () => {
   return (
@@ -355,10 +299,7 @@ const App = () => {
               <Route path="/Learning_Center/Montana" element={<Montana />} />
               <Route path="/Learning_Center/Nebraska" element={<Nebraska />} />
               <Route path="/Learning_Center/Nevada" element={<Nevada />} />
-              <Route
-                path="/Learning_Center/New_Hampshire"
-                element={<New_Hampshire />}
-              />
+              <Route path="/Learning_Center/New_Hampshire" element={<New_Hampshire />} />
               <Route
                 path="/Learning_Center/New_Jersey"
                 element={<New_Jersey />}
@@ -542,7 +483,6 @@ const App = () => {
               </Route>
 
               {/* Admin Protected Routes */}
-<<<<<<< HEAD
               <Route path='/dashboard' element={<AdminRoute />}>
                 <Route path='admin' element={<AdminDashboard />} />
                 <Route path='admin/createPackage' element={<CreatePackage />} />
@@ -550,17 +490,6 @@ const App = () => {
                 <Route path='admin/user-details' element={<UserDetails/>} />
                 <Route path='admin/user-documents' element={<UserDocuments/>} />
                 <Route path='admin/userNewOrder' element={<UserNewOrder/>} />
-=======
-              <Route path="/dashboard" element={<AdminRoute />}>
-                <Route path="admin" element={<AdminDashboard />} />
-                <Route path="admin/createPackage" element={<CreatePackage />} />
-                <Route path="admin/manage-orders" element={<ManageOrders />} />
-                <Route path="admin/user-details" element={<UserDetails />} />
-                <Route
-                  path="admin/user-documents"
-                  element={<UserDocuments />}
-                />
->>>>>>> b7d341d697f18907e4b843d5f6ce1970afd11aff
               </Route>
             </Route>
           </Routes>

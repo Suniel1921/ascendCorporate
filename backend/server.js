@@ -32,7 +32,7 @@ app.use('/api/v1/guide', guideInfoRoute)
 
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Nepal Tech');
+  res.send('Welcome to Nepal Tech innovations');
 });
 
 app.listen(port, () => {
