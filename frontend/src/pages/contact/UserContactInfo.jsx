@@ -9,7 +9,6 @@ import CartCard from '../cart/CartCard';
 
 const UserContactInfo = () => {
   const navigate = useNavigate();
-d 
   // Load saved form data from localStorage
   const loadSavedData = () => {
     const savedData = localStorage.getItem('contactFormData');
@@ -42,7 +41,7 @@ d
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
-        const response = await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/contacts`, values);
+        const response = await axios.post(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/userContactInfo`, values);
         if (response.data.success) {
           localStorage.setItem('contactFormData', JSON.stringify(values));
           toast.success('Contact saved successfully');

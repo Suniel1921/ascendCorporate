@@ -1,7 +1,7 @@
 
 // // const companyInfoModel = require('../models/companyInfoModel')
 const nodemailer = require('nodemailer');
-const contactModal = require('../models/contactModel');
+
 
 exports.saveContactForm = async (req, res) => {
   try {
@@ -198,40 +198,62 @@ exports.getAllCompanyInfo = async (req, res) => {
 
 
 
+// controllers/userContactController.js
 
+const ContactInfoModel = require('../models/userContactInfoModal');
 
-// controllers/userChatController.js
-
-// const UserChat = require ('../models/chatModel');
-
-exports.saveUserChatData = async (req, res) => {
+exports.userContactinfoController = async (req, res) => {
   try {
-    const userChat = new UserChat({
-      subject: req.body.subject,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      primaryPhone: req.body.primaryPhone,
-      secondaryPhone: req.body.secondaryPhone,
-      contactEmail: req.body.contactEmail,
-      confirmEmail: req.body.confirmEmail,
-      industry: req.body.industry,
-      orderNumber: req.body.orderNumber,
-      invoiceNumber: req.body.invoiceNumber,
-      message: req.body.message
+    const {
+      firstName,
+      middleName,
+      lastName,
+      country,
+      street,
+      city,
+      state,
+      postalCode,
+      phoneNumber,
+      secondaryPhoneNumber,
+      email,
+      confirmEmail,
+    } = req.body;
+
+    // Check if email and confirmEmail match
+    if (email !== confirmEmail) {
+      return res.status(400).json({ success: false, message: 'Emails do not match' });
+    }
+
+    // Create a new instance of ContactInfoModel
+    const contactData = new ContactInfoModel({
+      firstName,
+      middleName,
+      lastName,
+      country,
+      street,
+      city,
+      state,
+      postalCode,
+      phoneNumber,
+      secondaryPhoneNumber,
+      email,
+      confirmEmail,
     });
 
-    // Save the document to the database
-    await userChat.save();
+    // Save the instance to the database
+    await contactData.save();
 
-    // Send a success response
-    res.status(201).json({ message: 'User chat data saved successfully!' });
+    // Send success response
+    res.status(201).json({ success: true, message: 'Contact saved successfully' });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Internal server error' });
+    console.error('Error saving contact:', error);
+
+    // Check for duplicate email error
+    if (error.code === 11000 && error.keyPattern?.email) {
+      return res.status(400).json({ success: false, message: 'Email already exists' });
+    }
+
+    // Send generic error response
+    res.status(500).json({ success: false, message: 'Error saving contact', error: error.message });
   }
 };
-
-
-
-
-

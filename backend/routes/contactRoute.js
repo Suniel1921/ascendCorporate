@@ -7,7 +7,7 @@ routes.post('/contacts', controller.saveContactForm);
 routes.get('/userNewOrderContact', requireLogin, controller.getAllUserOderContact);
 routes.post('/userCompanyInfo', requireLogin, controller.createUserCompanyInfo);
 routes.get('/getAllCompanyInfo', requireLogin, controller.getAllCompanyInfo);
-routes.post('/userChat', controller.saveUserChatData)
+routes.post('/userContactInfo', controller.userContactinfoController)
 
 
 module.exports = routes;
