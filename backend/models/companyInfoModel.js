@@ -55,3 +55,4 @@ const userCompanyInfoSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('UserCompanyInfo', userCompanyInfoSchema);
+

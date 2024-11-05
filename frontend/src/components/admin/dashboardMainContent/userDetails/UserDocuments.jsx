@@ -1,6 +1,7 @@
+
 // import React, { useState, useEffect } from "react";
-// import axios from 'axios';
-// import { Table, Image, Spin, Alert } from 'antd';
+// import axios from "axios";
+// import { Table, Image, Spin, Alert } from "antd";
 // import SideMenu from "../../sideMenu/SideMenu";
 // import './userDocuments.css';
 
@@ -30,32 +31,34 @@
 //   const [loading, setLoading] = useState(true);
 //   const [error, setError] = useState(null);
 
-//   useEffect(() => {
-//     const fetchDocuments = async () => {
-//       try {
-//         setLoading(true);       
-//         const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/fileUpload/allDocuments`);
+//   const handleFetchError = (error) => {
+//     console.error('Fetch error:', error);
+//     setError(error.message || 'An error occurred while fetching documents');
+//   };
 
-//         if (response.data.success) {
-//           const documents = response.data.getAllDocuments;
-          
-//           // Transform the data to match the columns
-//           const formattedData = documents.map(doc => ({
-//             key: doc._id, 
-//             name: doc.name,
-//             images: doc.images 
-//           }));
-//           setData(formattedData);
-//         } else {
-//           throw new Error(response.data.message || 'Failed to fetch documents');
-//         }
-//       } catch (error) {
-//         setError(error.message || 'An error occurred');
-//       } finally {
-//         setLoading(false); 
+//   const fetchDocuments = async () => {
+//     try {
+//       setLoading(true);
+//       const { data: responseData } = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/fileUpload/allDocuments`);
+
+//       if (responseData.success) {
+//         const formattedData = responseData.getAllDocuments.map(doc => ({
+//           key: doc._id,
+//           name: doc.name,
+//           images: doc.images,
+//         }));
+//         setData(formattedData);
+//       } else {
+//         handleFetchError(new Error(responseData.message || 'Failed to fetch documents'));
 //       }
-//     };
+//     } catch (error) {
+//       handleFetchError(error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
 
+//   useEffect(() => {
 //     fetchDocuments();
 //   }, []);
 
@@ -71,7 +74,16 @@
 //         <div className="container">
 //           <div className="userDocuments">
 //             <h3>User Documents</h3>
-//             <Table dataSource={data} columns={columns} pagination={false} />
+//             {data.length === 0 ? (
+//               <Alert
+//                 message="No Documents Found"
+//                 description="Please upload documents."
+//                 type="info"
+//                 showIcon
+//               />
+//             ) : (
+//               <Table dataSource={data} columns={columns} pagination={false} />
+//             )}
 //           </div>
 //         </div>
 //       </div>
@@ -80,9 +92,6 @@
 // };
 
 // export default UserDocuments;
-
-
-
 
 
 
@@ -129,7 +138,6 @@ const UserDocuments = () => {
     try {
       setLoading(true);
       const { data: responseData } = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/fileUpload/allDocuments`);
-
       if (responseData.success) {
         const formattedData = responseData.getAllDocuments.map(doc => ({
           key: doc._id,
@@ -151,29 +159,31 @@ const UserDocuments = () => {
     fetchDocuments();
   }, []);
 
-  if (loading) return <Spin tip="Loading..." />;
-  if (error) return <Alert message="Error" description={error} type="error" />;
-
   return (
     <div className="userDocumentsContainer">
       <div className="adminDashboard">
+        {/* SideMenu should always be visible */}
         <div className="sideMenuContainer">
           <SideMenu />
         </div>
-        <div className="container">
-          <div className="userDocuments">
-            <h3>User Documents</h3>
-            {data.length === 0 ? (
-              <Alert
-                message="No Documents Found"
-                description="Please upload documents."
-                type="info"
-                showIcon
-              />
-            ) : (
-              <Table dataSource={data} columns={columns} pagination={false} />
-            )}
-          </div>
+
+        {/* Content area with loading spinner and table */}
+        <div className="container" style={{ marginTop: '84px' }}>
+          <h3>User Documents</h3>
+          {loading ? (
+            <Spin tip="Loading documents..." style={{ display: 'block', margin: '20px auto' }} />
+          ) : error ? (
+            <Alert message="Error" description={error} type="error" />
+          ) : data.length === 0 ? (
+            <Alert
+              message="No Documents Found"
+              description="Please upload documents."
+              type="info"
+              showIcon
+            />
+          ) : (
+            <Table dataSource={data} columns={columns} pagination={false} />
+          )}
         </div>
       </div>
     </div>

@@ -288,7 +288,7 @@
 
 
 
-//new code testing
+//new code testing (new order page)
 
 
 import React, { useState } from "react";
@@ -298,6 +298,7 @@ import axios from "axios";
 import "../contact/contact.css";
 import { useNavigate } from "react-router-dom";
 import { Input, Button } from "antd";
+import toast from "react-hot-toast";
 
 // Validation schema using Yup
 const validationSchema = Yup.object({
@@ -365,6 +366,7 @@ const Contact = () => {
           }
         );
         formik.resetForm();
+        toast.success('Thanks for your Order we will contact you soon..')
         navigate('/')
         formik.setStatus({ success: response.data.message });
         setCaptchaValue(generateCaptcha()); // Regenerate CAPTCHA on successful submission

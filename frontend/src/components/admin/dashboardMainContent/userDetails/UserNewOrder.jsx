@@ -1,23 +1,20 @@
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Table, Spin, Alert } from 'antd'; // Import Ant Design components
+import { Table, Spin, Alert } from 'antd';
 import SideMenu from '../../sideMenu/SideMenu';
-import './UserNewOrder.css'; // Import your CSS file
+import '../userDetails/UserNewOrder.css'
 
 const UserNewOrder = () => {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Function to fetch all contact data
   const fetchContacts = async () => {
     setLoading(true);
     try {
       const response = await axios.get(`${import.meta.env.VITE_REACT_APP_URL}/api/v1/contact/userNewOrderContact`);
-      // console.log(response); // Log the response for debugging
       if (response.data.success) {
-        setContacts(response.data.contacts); // Ensure this is set correctly
+        setContacts(response.data.contacts); 
       }
     } catch (err) {
       console.error('Error fetching contacts:', err);
@@ -27,7 +24,6 @@ const UserNewOrder = () => {
     }
   };
 
-  // UseEffect to fetch contacts when the component mounts
   useEffect(() => {
     fetchContacts();
   }, []);
@@ -53,26 +49,25 @@ const UserNewOrder = () => {
       title: 'Primary Phone',
       dataIndex: 'primaryPhone',
       key: 'primaryPhone',
-      render: (text) => text || 'N/A', // Render 'N/A' if there's no phone number
+      render: (text) => text || 'N/A',
     },
     {
       title: 'Secondary Phone',
       dataIndex: 'secondaryPhone',
       key: 'secondaryPhone',
-      render: (text) => text || 'N/A', // Render 'N/A' if there's no phone number
+      render: (text) => text || 'N/A',
     },
-   
     {
       title: 'Industry',
       dataIndex: 'industry',
       key: 'industry',
-      render: (text) => text || 'N/A', // Render 'N/A' if there's no industry
+      render: (text) => text || 'N/A',
     },
     {
       title: 'Message',
       dataIndex: 'message',
       key: 'message',
-      render: (text) => text || 'N/A', // Render 'N/A' if there's no message
+      render: (text) => text || 'N/A',
     },
   ];
 
@@ -83,7 +78,7 @@ const UserNewOrder = () => {
           <SideMenu />
         </div>
 
-        <div className="container newOrder">
+        <div className="container newOrder" style={{marginTop:'84px'}}>
           <h3>User New Order</h3>
 
           {loading ? (
@@ -94,9 +89,9 @@ const UserNewOrder = () => {
             <Table
               dataSource={contacts}
               columns={columns}
-              rowKey="_id" // Use _id as the unique key for each row
-              pagination={false} // Disable pagination, if desired
-              scroll={{ x: 'max-content' }} // Allow horizontal scrolling for long content
+              rowKey="_id"
+              pagination={{ pageSize: 6 }}
+              scroll={{ x: 'max-content' }}
             />
           )}
         </div>

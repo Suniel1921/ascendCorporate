@@ -1,5 +1,5 @@
-
-// // const companyInfoModel = require('../models/companyInfoModel')
+const companyInfoModel = require('../models/companyInfoModel');
+const contactModel = require ('../models/contactModel');
 const nodemailer = require('nodemailer');
 
 
@@ -21,7 +21,7 @@ exports.saveContactForm = async (req, res) => {
     } = req.body;
 
     // Create a new contact record
-    const contact = new contactModal({
+    const contact = new contactModel({
       subject,
       firstName,
       lastName,
@@ -77,7 +77,7 @@ exports.saveContactForm = async (req, res) => {
 
 exports.getAllUserOderContact = async (req, res) => {
   try {
-    const contacts = await contactModal.find({});
+    const contacts = await contactModel.find({});
     return res.status(200).json({ success: true, message: 'new order contact fetched sucessfully',contacts });
   } catch (error) {
     console.error(error);
