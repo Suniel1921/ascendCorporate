@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { CardNumberElement, CardExpiryElement, CardCvcElement, useStripe, useElements } from '@stripe/react-stripe-js';
@@ -5,6 +6,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import '../cart/checkout.css';
+import { useCartGlobally } from "../../contexts/cartContext"; // Importing the context
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
 const API_URL = import.meta.env.VITE_REACT_APP_URL;
@@ -12,6 +14,7 @@ const API_URL = import.meta.env.VITE_REACT_APP_URL;
 const CheckoutForm = ({ totalPrice }) => {
     const stripe = useStripe();
     const elements = useElements();
+    const { clearCart } = useCartGlobally(); // Accessing the clearCart function from context
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const [userData, setUserData] = useState({});
@@ -74,10 +77,9 @@ const CheckoutForm = ({ totalPrice }) => {
 
             if (paymentResult.paymentIntent.status === 'succeeded') {
                 await saveOrderDetails(paymentResult.paymentIntent.id);
-                // Clear the cart from localStorage after successful payment
-                localStorage.removeItem('cart');
-                setUserData(prevData => ({ ...prevData, cart: [] }));
 
+                // Clear the cart from both localStorage and global state
+                clearCart(); // Clear the cart globally using context
                 toast.success("Payment successful!");
                 navigate('/client-dashboard');
             } else {
